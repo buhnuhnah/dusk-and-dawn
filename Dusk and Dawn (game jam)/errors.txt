@@ -1,0 +1,11 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 57: invalid syntax
+    $ dice = renpy.random.randint(20,50)*0.1
+     ^
+    
+
+Ren'Py Version: Ren'Py 7.4.4.1439
+Sun Aug 29 21:53:18 2021
