@@ -150,7 +150,7 @@ style namebox:
 
 style say_label:
     properties gui.text_properties("name", accent=True)
-    xalign gui.name_xalign
+    xalign 0.2
     yalign 0.5
 
 style say_dialogue:
@@ -251,7 +251,7 @@ screen quick_menu():
             style_prefix "quick"
 
             xalign 0.5
-            yalign 1.0
+            yalign 0.97
 
             textbutton _("Back") action Rollback()
             textbutton _("History") action ShowMenu('history')
