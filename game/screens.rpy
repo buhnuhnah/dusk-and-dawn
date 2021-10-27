@@ -344,6 +344,9 @@ style navigation_button:
 
 style navigation_button_text:
     properties gui.button_text_properties("navigation_button")
+    xalign 0.5
+    xoffset 20
+    ypos 40
 
 
 ## Main Menu screen ############################################################
