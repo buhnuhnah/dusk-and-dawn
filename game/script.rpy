@@ -47,7 +47,7 @@ image warehouse alarm:
     repeat
 
 init python:
-    config.searchpath.extend(["game/audio", "game/images"])
+    config.searchpath.extend(["game/audio", "game/images/backgrounds"])
     dice = renpy.random.randint(2,8)*0.1
 
     # POINT TRACKERS

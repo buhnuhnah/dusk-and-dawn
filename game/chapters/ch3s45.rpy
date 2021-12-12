@@ -29,11 +29,13 @@ label ch3_s4_shadow:
     st "I see you're with your new friend... should I give you two a moment?"
     show bolt sad
     b "Bastion, please, listen..."
-    "I see Bastion's fist turn to stone. Samuel presses his back against mine, and I avert my eyes for a second to see that Alicia was facing him frost forming at her fingertips."
+    "I see Bastion's fist turn to stone."
+    "Samuel presses his back against mine, and I avert my eyes for a second to see that Alicia was facing him frost forming at her fingertips."
     "And there's poor Mia behind her... she looks frightened."
     st "No, don't! I'm afraid I've already heard enough! I already understand what's happened!"
     b "Bastion!"
-    st "You've abandoned all your morals! All your heroic virtues for... for this scoundrel! You've killed! Abandoned your duty! All for what?"
+    st "You've abandoned all your morals! All your heroic virtues for... for this scoundrel!"
+    st "You've killed! Abandoned your duty! All for what?"
     st "{i}Him?!{/i}"
     "I don't know what to say. Bastion's words hurt. As I'm choking on my words, Samuel walks in front of me."
     sh "Bastion."
@@ -61,7 +63,8 @@ label ch3_s4_bastion:
     show stoneman surprised
     st "Oh! Oops! Sorry, I..."
     sh "Ahem."
-    "Bastion let's me go, rubbing the back of his head out of embarrassment. I turn around to see Samuel staring at us. Behind him was Alicia, arms sternly crossed over her chest."
+    "Bastion let's me go, rubbing the back of his head out of embarrassment."
+    "I turn around to see Samuel staring at us. Behind him was Alicia, arms sternly crossed over her chest."
     "And there was Mia next to her, sticking close to her."
     f "Good to see you back, Bolt."
     m "I'm glad to see you're back. After you disappeared at the warehouse, I..."
@@ -97,7 +100,8 @@ label ch3_s5_2:
     st "All this time, I've just kept pushing you. Encouraging you to make sacrifice after sacrifice."
     st "I'm... an idiot. I should've known. And even after pushing you, the way I treated you after everything..."
     show stoneman angry
-    st "How could I not see all of the pressure I was putting on you?! All of the harm it was doing? And not only to you, but to all of us..."
+    st "How could I not see all of the pressure I was putting on you?!"
+    st "All of the harm it was doing? And not only to you, but to all of us..."
 menu:
     "Apology accepted":
         b "Apology accepted."
@@ -107,7 +111,8 @@ menu:
         show stoneman sad
         st "How do I make it up to you?"
         "I walk up to Bastion and pull him to his feet."
-        b "If you're going to be a damn leader, we're going to need you on your feet. We still have a lot to do. So, make it up to me by helping us take out Daylight, yeah?"
+        b "If you're going to be a damn leader, we're going to need you on your feet. We still have a lot to do."
+        b "So, make it up to me by helping us take out Daylight, yeah?"
         show stoneman surprised
         st "..."
         jump ch3_s5_4
@@ -120,7 +125,8 @@ menu:
         b "How could you have known about what they were doing? They fooled all of us. Don't beat yourself up over it."
         show stoneman sad
         st "But... what if any of you died?"
-        b "Well, none of us did. Because in the end, we have a good leader, and that's what counts. Now, are you going to continue moping, or are you going to help us out?"
+        b "Well, none of us did. Because in the end, we have a good leader, and that's what counts."
+        b "Now, are you going to continue moping, or are you going to help us out?"
         show stoneman surprised
         st "..."
         jump ch3_s5_4
@@ -130,7 +136,8 @@ label ch3_s5_3:
     st "I've failed you..."
     show bolt surprised
     b "Bastion?"
-    st "I kept pushing you... I encouraged you for being self-sacrificing over... over what? Taking away supplies that would've been gifted to the needy? I thought we were the heroes!"
+    st "I kept pushing you... I encouraged you for being self-sacrificing over... over what?"
+    st "Taking away supplies that would've been gifted to the needy? I thought we were the heroes!"
     st "I couldn't stop thinking about it the next day. About why they kept pushing us... if only I figured it out sooner."
     st "All the pressure I put on you, all the harm I've done... I could've stopped all of that, Rene!"
     st "If I lost you... I..."
@@ -185,7 +192,8 @@ label ch3_s5_4:
     b "Yes... she had a leading role in Daylight, but left. She's a super, and she can tell if others are supers too."
     f "Huh. Just seems a little... convenient, is all."
     b "I know it all sounds {i}insane{/i} but... Aunty wouldn't lie to me."
-    m "It'd be quite the thing to lie about... the better question is, what do we do with this information? If everything she says is true..."
+    m "It'd be quite the thing to lie about... the better question is, what do we do with this information?"
+    m "If everything she says is true..."
     f "Then we have quite the opponent ahead of us."
     b "That's why me and Samuel are gathering everyone together."
     b "Aunt Matilda's place should be safe from the supervision of Daylight. We should actually get there as soon as possible."
@@ -210,7 +218,8 @@ label ch3_s5_4:
     show shadow neutral
     sh "Which, in hindsight, isn't really saying much."
     f "I really can't believe you're calling someone like {i}Magno{/i} a hero..."
-    m "We can't deny that they're very powerful. They would be great to have on our side. And... I don't think it's a stretch to get them to fight Daylight. They've been used too, after all."
+    m "We can't deny that they're very powerful. They would be great to have on our side."
+    m "And... I don't think it's a stretch to get them to fight Daylight. They've been used too, after all."
     "We all look to Samuel."
     sh "... it's a risk."
     b "The more, the merrier, right?"

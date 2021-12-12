@@ -3,7 +3,8 @@ label ch1:
     show stoneman neutral with dissolve
     st "Alright, Dusk, keep moving! We're almost at the warehouse!"
     show stoneman at offscreenleft with ease
-    "Moonlight falls on the windowless building before us. The industrial area is dark at night, so unlike the rest of the city. I suppose there is no point in lighting a building at night whose only purpose is to store items and datasticks."
+    "Moonlight falls on the windowless building before us. The industrial area is dark at night, so unlike the rest of the city."
+    "I suppose there is no point in lighting a building at night whose only purpose is to store items and datasticks."
     "There are no humans working here, except for the guards. They are equipped with flashlights, making them easy targets. So they won't be working here very long."
     show bolt neutral with dissolve
     "I teleport behind the nearest guard. Even in the darkness, it's easy to guess where to strike."
@@ -78,10 +79,12 @@ label warehouse2:
     show stoneman neutral at left with dissolve
     "Dusk - that's us. Three friends with special powers who formed a superhero team."
     "And then there's Mia, our hacker."
-    "Currently we are here to secure a package from this warehouse. The building and the items stored inside are owned by the enemies of our organisation - Dawn."
+    "Currently we are here to secure a package from this warehouse."
+    "The building and the items stored inside are owned by the enemies of our organisation - Dawn."
     show stoneman happy
     st "Take this!"
-    "With a smile on his face Stoneman, our leader, punches the last guard and knocks her unconscious. He has the power to turn his skin to stone. It's hard to hurt him and his punch is powerful."
+    "With a smile on his face Stoneman, our leader, punches the last guard and knocks her unconscious."
+    "He has the power to turn his skin to stone. It's hard to hurt him and his punch is powerful."
 
     if villain == 0:
         jump no_wkills
@@ -91,7 +94,8 @@ label warehouse2:
 label no_wkills:
     f "Aren't you a bit too happy about fighting?"
     show stoneman neutral
-    st "Oh, well... I just can't help it, y'know? I'm pretty good at the whole \"fighting evil\" thing! Well, compared to everything else..."
+    st "Oh, well... I just can't help it, y'know? I'm pretty good at the whole \"fighting evil\" thing!"
+    st "Well, compared to everything else..."
     show bolt happy
     b "I see someone needs a boost to their ego!"
 menu:
@@ -143,7 +147,7 @@ label warehouse3:
     st "Good job, Mia! Thank you!"
     m "...don't worry about it... I'm just doing my job..."
     f "Let's continue with the mission! The sooner we can find the package, the less risk we run into Dawn."
-    "Dawn is a supervillain team. Our enemies. There are three of them, and lately we’ve run into them way too often."
+    "Dawn is a supervillain team. Our enemies. There are three of them, and lately we've run into them way too often."
     "Unlike those guards they pose a real threat. I hate to admit it but their superpowers equal our own."
     show stoneman neutral
     "We enter the building. Boxes are piled upon boxes all the way to the ceiling."
@@ -162,18 +166,22 @@ label warehouse3:
     st "Good luck everyone."
     hide stoneman with dissolve
     show bolt at center with ease
-    "I open the holo display of my watch. It glows a warm orange hue and shows the signature above my wrist. Looking at it I compare it to the labels on the boxes, trying to find a pattern."
+    "I open the holo display of my watch. It glows a warm orange hue and shows the signature above my wrist."
+    "Looking at it I compare it to the labels on the boxes, trying to find a pattern."
 
     "..."
 
     "It takes me a while but finally I figure out how the warehouse is organized. If I'm right the package is not on my side."
     b "Found the inventory document. Now to crack this... I need some time."
-    "I turn to rejoin the others and to talk to them about the pattern I found. Just then I hear the sounds of fighting from Frostbite's side of the warehouse."
-    "I run there as quickly as I can. When I'm closer I realise what is going on immediately. The red and black uniforms of Dawn flash before my eyes."
+    "I turn to rejoin the others and to talk to them about the pattern I found."
+    "Just then I hear the sounds of fighting from Frostbite's side of the warehouse."
+    "I run there as quickly as I can. When I'm closer I realise what is going on immediately."
+    "The red and black uniforms of Dawn flash before my eyes."
     "It's our enemies... why again? We were so quiet and efficient!"
     show stoneman at offscreenleft
     ma "Take this, you bitch!"
-    "The chains that Magno, the leader of Dawn, manipulates in the air hit Frostbite straight in the chest. He manipulates gravity and for some reason he likes to fight with those clunky metal chains."
+    "The chains that Magno, the leader of Dawn, manipulates in the air hit Frostbite straight in the chest."
+    "He manipulates gravity and for some reason he likes to fight with those clunky metal chains."
     f "Oof!"
     "Frostbite grabs her arm. She's hurt but it seems she can still fight. It's not that bad, at least we can heal quickly."
     show bolt surprised
@@ -189,7 +197,8 @@ label warehouse3:
     stop sound fadeout 1.0
     show stoneman surprised
     sn "I will be your opponent today!"
-    "That's Snapshot, whose superpower is high accuracy. She shot the ground on purpose to stop Stoneman. She could have hit him square in the chest if she wanted to."
+    "That's Snapshot, whose superpower is high accuracy. She shot the ground on purpose to stop Stoneman."
+    "She could have hit him square in the chest if she wanted to."
     st "Very well."
     show bolt neutral
     hide stoneman with dissolve
@@ -207,7 +216,8 @@ menu:
 label duck:
     "His attacks are usually predictable. His strength lies in his ability to wrap shadows around himself and disappear from sight."
     play sound "<to 1.0>punch.mp3" volume 0.6
-    "I hope for the best, quickly ducking as a fist flies a mere inch above my head. But before I can react, I feel him kick my legs out from under me." with hit
+    "I hope for the best, quickly ducking as a fist flies a mere inch above my head."
+    "But before I can react, I feel him kick my legs out from under me." with hit
     show shadow angry
     sh "What, not giving me a challenge today? Why are you not being serious?"
     show bolt happy
@@ -258,18 +268,20 @@ label warehouse4:
     b "Ouch!"
     f "I've got the package! I'm getting out of here, cover me!"
     "As Frostbite runs past Shadow she freezes his boots to the ground so he can't follow."
-    "Before I can phase out, Magno wraps his chains around me and tightens them to the point that I feel like they are going to crush my lungs."
+    "Before I can phase out, Magno wraps his chains around me."
+    "He tightens them to the point that I feel like they are going to crush my lungs."
     scene warehouse night with Fade(0.25, 0.5, 0.15)
     show bolt at right
     show shadow at left
-    "One end of the chain is wrapped around my throat. I can’t use my powers while being in such close contact with the abilities of another super."
+    "One end of the chain is wrapped around my throat."
+    "I can't use my powers while being in such close contact with the abilities of another super."
     "Snapshot is getting closer and closer to the door, not noticing what is going on. Stoneman is occupied too."
     "I can't breathe...!"
     scene warehouse night with Fade(0.25, 0.5, 0.15)
     show bolt at right
     show shadow at left
-    "I look through my teary eyes at Shadow. He’s looking at me with determination and… pain…"
-    "He breaks out of Frostbite’s hold. Her powers grow weaker the further she is from the target and now she’s almost at the door."
+    "I look through my teary eyes at Shadow. He's looking at me with determination and... pain..."
+    "He breaks out of Frostbite's hold. Her powers grow weaker the further she is from the target and now she's almost at the door."
     show shadow angry
     sh "Stop it, Magno! You're killing her!"
     "He is... concerned about me? But... he's on the opposite side of the fight?"
@@ -281,7 +293,9 @@ label warehouse4:
     scene warehouse night with Fade(0.5, 0.5, 0.25)
     show stoneman surprised at center with dissolve
     st "Bolt!"
-    "Stoneman's concerned face comes into my view. He takes me in his arms and starts running to the exit. That's the last thing I remember before I passed out, exhausted."
+    "Stoneman's concerned face comes into my view. He takes me in his arms and starts running to the exit."
+    scene black with fade
+    "That's the last thing I remember before I passed out, exhausted."
 
     scene dusk base with Fade(1.0, 1.0, 0.5)
     show stoneman at left
@@ -329,8 +343,10 @@ label scene2:
     r "Folks, I really am fine..."
     a "Don't lie to us!"
     r "...well I will be tomorrow."
-    ba "Hey, there are things expected of us. Certain things we have to uphold, for the good of everyone. If we fall short, who knows how many innocent people will get hurt?"
-    ba "As leader, I have to make sure we meet these expectations. Because of Rene, we provided. Because of the sacrifices we make, people are safe. This discussion is over."
+    ba "Hey, there are things expected of us. Certain things we have to uphold, for the good of everyone."
+    ba "If we fall short, who knows how many innocent people will get hurt?"
+    ba "As leader, I have to make sure we meet these expectations. Because of Rene, we provided."
+    ba "Because of the sacrifices we make, people are safe. This discussion is over."
     r "As long as we win, it doesn't matter if I get a bit hurt. It's my own decision to act this way. Please respect it."
     m "Oh God, why..."
     a "This is unbelievable..."
@@ -413,15 +429,16 @@ label lie:
 
 label end_scene2:
     "I get up and wince. I think I need to take a cab home. I can't walk in this state."
-    "I’d never admit to how much it hurts. But it feels like I got run over by a truck."
-    "I can’t go to the hospital as a super. Our powers are a secret from the rest of society. I can’t risk being found out."
+    "I'd never admit to how much it hurts. But it feels like I got run over by a truck."
+    "I can't go to the hospital as a super. Our powers are a secret from the rest of society. I can't risk being found out."
     "I guess I should just sleep it off."
     jump scene3
 
 label scene3:
     scene bedroom with Fade(0.25, 1.0, 0.25)
     show rene neutral at offscreenright
-    "As soon as I get home I sneak past my parents and collapse on my bed without even changing clothes and fall asleep. I will regret this tomorrow."
+    "As soon as I get home I sneak past my parents and collapse on my bed without even changing clothes and fall asleep."
+    "I will regret this tomorrow."
     "My dreams are restless. I keep replaying what happened at the warehouse. Magno's eyes staring, that intent to kill, it haunts me."
     "I noticed how unstable he is but I never thought he would go so far. I have to be careful around him from now on."
 
@@ -438,14 +455,15 @@ menu:
     "Guilty":
         $ villain = 0
         show bolt sad
-        "I regret what I did today. What has gotten into me? Not only did I kill, I also got into a fight with my friends. This is not me. I'm not this person... or am I?"
+        "I regret what I did today. What has gotten into me? Not only did I kill, I also got into a fight with my friends. This is not me." "I'm not this person... or am I?"
         scene bedroom
         show rene neutral at offscreenright
         jump scene3_2
     "Empowered":
         $ villain += 5
         show bolt happy
-        "I feel elated. The strong will rule over the weak. I've proved today that I'm the strong one. And... I want to do it again. I'm finally being true to myself."
+        "I feel elated. The strong will rule over the weak. I've proved today that I'm the strong one."
+        "And... I want to do it again. I'm finally being true to myself."
         scene bedroom
         show rene neutral at offscreenright
         jump scene3_2
@@ -537,10 +555,12 @@ label scene3_3:
     sh "Yes..."
     show rene surprised
     b "Why?! We're enemies. You shouldn't be here or... care about my wellbeing..."
-    sh "I will be the one to decide whom I care about. And regardless of who you are to me, you are part of my life and I don't enjoy seeing the people around me get hurt."
+    sh "I will be the one to decide whom I care about."
+    sh "And regardless of who you are to me, you are part of my life and I don't enjoy seeing the people around me get hurt."
     b "Wow... that's... very nice of you..."
     "That's impossible. There has to be something more to this."
-    "Sure, I enjoy our bickering and we are rarely the ones to fight against each other. Of the whole Dawn team I could say Shadow is the one that is the nicest, but... he's still a villain."
+    "Sure, I enjoy our bickering and we are rarely the ones to fight against each other."
+    "Of the whole Dawn team I could say Shadow is the one that is the nicest, but... he's still a villain."
     show shadow sad
     sh "You don't believe me."
 menu:
@@ -557,7 +577,8 @@ label admit_ch1:
         jump admit_ch1a
     else:
         show shadow neutral
-        sh "I supposed it's easier for you to see everything as black and white. Then you can fight against us with no worry that you are doing something wrong."
+        sh "I supposed it's easier for you to see everything as black and white."
+        sh "Then you can fight against us with no worry that you are doing something wrong."
         show rene angry
         b "Of course I'm doing nothing wrong by fighting you!"
         sh "Feel free to keep telling yourself that."
@@ -583,13 +604,15 @@ menu:
         b "Yes, I liked it and I would do it again."
         show shadow happy
         sh "Well, it does give you a boost. Just don't get too addicted to the feeling."
-        sh "Only kill when you have something to gain from it, not for pleasure. Else you will lose yourself entirely... like someone else I know. I would hate for that to happen to you."
+        sh "Only kill when you have something to gain from it, not for pleasure. Else you will lose yourself entirely...like someone else I know."
+        sh "I would hate for that to happen to you."
         "Whom is he referring to?"
         show shadow neutral
         sh "But if you're thinking of switching sides - don't do it."
         show rene surprised
         b "What? Why?"
-        sh "Because it's not any better on the Dawn side either. Yes, we are more lenient on the killing part but there are so many rules holding one back from reaching one's true potential."
+        sh "Because it's not any better on the Dawn side either."
+        sh "Yes, we are more lenient on the killing part, but there are so many rules holding one back from reaching one's true potential."
         b "I see. Do you want to leave?"
         show shadow happy
         sh "And go where? For now I need the organisation and it needs me. We have a strained relationship but it's not bad enough to leave."
@@ -638,16 +661,19 @@ label scene3_4a:
     sh "If that's what you wish."
     hide shadow with dissolve
     show rene at center with ease
-    "He leaves through the window. I fall back on the bed and start to cry. Why did I get so angry? What if he and my friends are right? What if I'm wrong? But Bastion stood by the decision..."
+    "He leaves through the window. I fall back on the bed and start to cry."
+    "Why did I get so angry? What if he and my friends are right? What if I'm wrong?"
+    "But Bastion stood by the decision..."
     "I'm so confused."
     "Eventually I cry myself to sleep."
     jump scene4
 
 label scene4:
     scene college classroom day with Fade(0.25, 0.5, 0.25)
-    "The next day my body is in a much better state, though I’ve got colorful bruises all over."
+    "The next day my body is in a much better state, though I've got colorful bruises all over."
     show rene neutral at center with dissolve
-    "Stubborn as I am, I decide not to acknowledge the soreness and go to class... Now it’s midday and I regret that decision wholeheartedly."
+    "Stubborn as I am, I decide not to acknowledge the soreness and go to class..."
+    "Now it's midday and I regret that decision wholeheartedly."
     show rene neutral at right with ease
     show bastion neutral at left with dissolve
     r "Ouch..."
@@ -657,53 +683,69 @@ label scene4:
     r "I'm fine, it's not so bad."
     ba "Hm... alright. Just make sure to look after yourself, okay?"
     show rene neutral
-    "Bastion and I are both economics students. We both keep good grades because we picked our field of studies well. It's something we both enjoy."
-    "Though I do look forward to graduating and to start working. But with Dusk as well as studies, my double life hasn't left me much time for a normal part-time job."
-    "The lecture starts, but I can’t focus to save my life. My thoughts stray to Shadow’s weird visit yesterday. I wonder if I was too hard on him."
+    "Bastion and I are both economics students. We both keep good grades because we picked our field of studies well."
+    "It's something we both enjoy, though I do look forward to graduating and to start working."
+    "But with Dusk as well as studies, my double life hasn't left me much time for a normal part-time job."
+    "The lecture starts, but I can't focus to save my life. My thoughts stray to Shadow's weird visit yesterday."
+    "I wonder if I was too hard on him."
     "He came to me worried after all… and what if it was genuine? I accused him of trying to manipulate me without proof."
-    "Yes, I'm a person who often acts impulsively and without thinking. But I'm also capable of self-reflection... I guess I should do that later."
+    "Yes, I'm a person who often acts impulsively and without thinking. But I'm also capable of self-reflection..."
+    "I guess I should do that later."
     "Maybe I should apologise the next time I see him?"
     "But... apologise to my enemy?"
-    "Are we really enemies? He did save me after all. And we rarely exchange any real punches, we often just engage each other and try to see who can catch whom."
+    "Are we really enemies? He did save me after all."
+    "And we rarely exchange any real punches, we often just engage each other and try to see who can catch whom."
     "I hate to call it a game when what we are doing is serious... but it is something I enjoy."
-    "And what he said about promising not to act reckless... I'm not sure how I feel about my decision to grab the package despite everything yesterday."
-    "Bastion backed me, but the others pointed out that it wasn't a good thing to do. What if I am wrong in believing that it was worth getting hurt over the box..."
-    "I don’t even know what’s in this package and I receive no bonus for performance on those missions. Yes, I get a salary for being a superhero, it is a job after all. It’s a good thing to do but it’s still work."
+    "And what he said about promising not to act reckless..."
+    "I'm not sure how I feel about my decision to grab the package despite everything yesterday."
+    "Bastion backed me, but the others pointed out that it wasn't a good thing to do."
+    "What if I am wrong in believing that it was worth getting hurt over the box..."
+    "I don't even know what's in this package and I receive no bonus for performance on those missions."
+    "Yes, I get a salary for being a superhero, it is a job after all. It's a good thing to do but it's still work."
     "A note lands in front of me."
     show bastion happy
     "I look to my right at Bastion and he points to it with his pen."
-    "\"Try to be less obvious about not paying attention to the class :)\" it says."
-    "Crap. I was indeed quite deep in thought. Back to class it is then. Better focus before the teacher catches me. I don't need more trouble in my life."
+    "\"Try to be less obvious about not paying attention to the class \:)\" it says."
+    "Crap. I was indeed quite deep in thought."
+    "Back to class it is then. Better focus before the teacher catches me. I don't need more trouble in my life."
     jump scene5
 
 label scene5:
     scene black with Fade(0.5, 0.0, 0.25)
     "I spend the rest of the day reflecting about what happened yesterday."
     scene park day memory with fade
-    "At one point I rememeber a memory from my childhood. I was 8 years old then and I was playing in the park with my 6 year old brother, Marcus."
+    "At one point I rememeber a memory from my childhood."
+    "I was 8 years old then and I was playing in the park with my 6 year old brother, Marcus."
     "Marcus" "Rene, Rene! Catch me if you can!"
     r "Of course I can! Just watch me!"
-    "I run up to Marcus as quickly as I can. But he is too far ahead of me. He sends me a big smile and starts climbing a tree. When I reach him, he is already high up."
-    "I don't climb after him. I've got a terrible fear of heights and just looking at him sitting on that branch makes me nauseous. Why is he doing this if he knows that I don't like it? Probably to annoy me."
+    "I run up to Marcus as quickly as I can. But he is too far ahead of me."
+    "He sends me a big smile and starts climbing a tree. When I reach him, he is already high up."
+    "I don't climb after him. I've got a terrible fear of heights and just looking at him sitting on that branch makes me nauseous."
+    "Why is he doing this if he knows that I don't like it? Probably to annoy me."
     r "Marcus! Come down!"
     "Marcus" "No, you come up! Or are you too scared?"
-    "Normally Marcus is able to bait me into doing anything he wants. Any challenge, I will accept. I'm overly competitive, I know. But not this. I'd rather die than climb that tree."
+    "Normally Marcus is able to bait me into doing anything he wants. Any challenge, I will accept."
+    "I'm overly competitive, I know. But not this. I'd rather die than climb that tree."
     "Marcus" "I knew it! Scaredy cat!"
     r "Hmpf! This is not fun. I'm leaving."
     "I stomp away from the tree."
     "Suddenly I hear a scream and when I turn around I see Marcus falling."
-    "This is when I phase for the first time. One moment I'm here, the other under Marcus. It's dizzying. I want to throw up. And the pain... ouch..." with hit
+    "This is when I phase for the first time. One moment I'm here, the other under Marcus."
+    "It's dizzying. I want to throw up. And the pain... ouch..." with hit
     r "Marcus, are you alright?!"
     "Marcus" "Yes... yes... what about you, sis?"
-    "He landed on me, so I cushioned his fall. But as he rolls off me to the side I notice that I can't quite move my right arm. The arm he landed on."
+    "He landed on me, so I cushioned his fall."
+    "But as he rolls off me to the side I notice that I can't quite move my right arm. The arm he landed on."
     "I start crying and so does Marcus."
-    "Soon our parents find us. My arm is broken and I'm taken to the hospital. My super powers are still weak so it takes me a few months to recover."
+    "Soon our parents find us. My arm is broken and I'm taken to the hospital."
+    "My super powers are still weak so it takes me a few months to recover."
     "Since then, I've always thought that it doesn't matter if I get hurt, What matters is that everyone lives and we succeed."
     if villain != 0:
         "Well... almost everyone."
     if bastion >= 10:
         "That's how it should be... right, Bastion?"
-    "I applied this logic to everything in life. Everything is a challenge to me. This has its upsides, but it can be... self destructive too."
+    "I applied this logic to everything in life. Everything is a challenge to me."
+    "This has its upsides, but it can be... self destructive too."
     "And yesterday I was so self-destructive that even Shadow, an enemy, noticed and he decided it was worth talking about."
     "Did I go too far?"
     jump ch2_s1

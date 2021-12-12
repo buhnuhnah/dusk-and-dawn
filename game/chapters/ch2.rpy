@@ -1,7 +1,8 @@
 label ch2_s1:
     scene college classroom day with Fade(0.75, 0.5, 0.5)
-    "The next day I feel a lot better, physically anyways. I still have not reached a decision about whether my self-sacrificing behavior is a good thing or not."
-    "Professor Brown" "Rene, could you deliver those papers to Professor Smith in the Music department?"
+    "The next day I feel a lot better, physically anyways."
+    "I still have not reached a decision about whether my self-sacrificing behavior is a good thing or not."
+    "Prof. Brown" "Rene, could you deliver those papers to Professor Smith in the Music department?"
     "That's the next building over on our campus."
     show rene happy with dissolve
     r "Of course, Professor. Where can I find Professor Smith?"
@@ -13,7 +14,7 @@ label ch2_s1:
     s "♫ ♫ ♫"
     "He looks familiar but he's too far for me to tell for sure."
     "But man, this song is supposed to be a happy one. Why is he struggling to convey happiness so much?"
-    "Professor Smith" "Again, Samuel. This song is supposed to be about joy. Your singing is making me sad instead."
+    "Prof. Smith" "Again, Samuel. This song is supposed to be about joy. Your singing is making me sad instead."
     "The professor agrees with me... I guess the student is called Samuel."
     "Samuel... Samuel... Do I know him?"
     "Maybe I should help him sing? I've got plenty of happiness. Maybe I could cheer him up..."
@@ -35,11 +36,12 @@ label sing_ch2:
     "It worked! We finish the song together with smiles on our faces."
     "That smirk... oh my gosh, I do know him! Samuel is... Shadow! Woah!"
     s "Thank you!"
-    "Professor Smith" "...an unconventional way of solving the problem, but if it works, it works."
+    "Prof. Smith" "...an unconventional way of solving the problem, but if it works, it works."
     jump ch2_s1_2
 
 label wait_ch2:
-    "I shouldn't interrupt. This Samuel might sound familiar, but I don't know him as far as I can tell. It's almost hard to listen to though, he just makes the song sound sad."
+    "I shouldn't interrupt. This Samuel might sound familiar, but I don't know him as far as I can tell."
+    "It's almost hard to listen to though, he just makes the song sound sad."
     show samuel neutral at left
     show rene neutral at right
     with move
@@ -48,7 +50,7 @@ label wait_ch2:
     jump ch2_s1_2
 
 label ch2_s1_2:
-    "Professor Smith" "Who are you? Are you one of our students? I don't recognise you."
+    "Prof. Smith" "Who are you? Are you one of our students? I don't recognise you."
     show rene happy
     r "My name is Rene Garcia. I'm a student of economics, I just came from across the campus."
     show samuel surprised
@@ -71,14 +73,14 @@ menu:
 label ch2_s1_3:
     show samuel angry
     s "What are you doing here?!"
-    "Professor Smith" "Do you know each other?"
+    "Prof. Smith" "Do you know each other?"
     show rene neutral
     r "We work... together."
     s "Don't approach me outside of work."
     show rene angry
     r "I'm not here because I'm stalking you or something. Professor Brown asked me to deliver those papers."
     "I hand the documents to Professor Smith."
-    "Professor Smith" "Ah, thank you."
+    "Prof. Smith" "Ah, thank you."
     s "So the task is done. Leave."
     r "Why are you so rude?"
     s "Just leave. Now."
@@ -97,7 +99,8 @@ label ch2_s1_3:
 label ch2_s1_b1:
     "Ugh... i have to get my mind off of that."
     show rene neutral
-    "By this point, class was over. I had decided to hang out with Dusk after classes in the park. I wonder if I should head back and meet Bastion? Or maybe I should just head to the park..."
+    "By this point, class was over. I had decided to hang out with Dusk after classes in the park."
+    "I wonder if I should head back and meet Bastion? Or maybe I should just head to the park..."
 menu:
     "Head straight to the park":
         "We're going to the same place anyways, I'll just go ahead and get a head start. Give me some time to think..."
@@ -191,9 +194,11 @@ label ch2_s1_b4:
     r "Yes! Shall we?"
     ba "Let's not keep them waiting, then!"
     "And just like that, our spirits are high."
-    "Bastion. He's not the most charismatic leader, but he makes up for it in spunk. When he's around, I genuinely feel bolder around him."
+    "Bastion. He's not the most charismatic leader, but he makes up for it in spunk."
+    "When he's around, I genuinely feel bolder around him."
     "...of should I say {i}boulder{/i}?"
-    "Ahem. Anyways, since our spirits are high, maybe I can do something to lighten the mood a bit more? I feel like Bastion still hasn't shaken off that incident earlier..."
+    "Ahem. Anyways, since our spirits are high, maybe I can do something to lighten the mood a bit more?"
+    "I feel like Bastion still hasn't shaken off that incident earlier..."
 
 menu:
     "The team's waiting. Let's just go.":
@@ -212,7 +217,8 @@ menu:
         ba "Rene... I'm afraid your path in comedy has hit rock bottom."
         "{i}Hey.{/i}"
         r "I just hook my arm around his and pull him along. All while he's laughing."
-        "For that moment, it looks like he's forgotten everything that was worrying him... I'm glad I could help him forget whatever was on his mind, even for a moment."
+        "For that moment, it looks like he's forgotten everything that was worrying him."
+        "I'm glad I could help him forget whatever was on his mind, even for a moment."
         show rene neutral
         r "Hey, just curious... does your brain... become like, you know, {i}hard{/i} whenever you use your powers?"
         ba "Of course!"
@@ -229,9 +235,12 @@ label ch2_s2:
     show bastion neutral at left
     m "And then Professor Miller said..."
     a "Really, I thought..."
-    "I realise I’m not listening to the conversation at all. The Dusk team: Bastion, Alicia, Mia and I decided to hang out together after school at the park. It’s nice to spend time together outside of work…"
+    "I realise I’m not listening to the conversation at all."
+    "The Dusk team: Bastion, Alicia, Mia and I decided to hang out together after school at the park."
+    "It’s nice to spend time together outside of work…"
     "But I can't focus. I keep thinking about Shadow's reaction to me discovering he's Samuel."
-    "All this time he was living his life so close to me and I didn't realise. I feel weird about this. He's right - it was easier when I saw everything as black and white."
+    "All this time he was living his life so close to me and I didn't realise. I feel weird about this."
+    "He's right - it was easier when I saw everything as black and white."
     "But I can't anymore. Shadow is a real person trying to live his life, not just an anonymous enemy."
     if villain >= 10:
         "But after all, why can't it be? Knowing my enemies shouldn't necessarily interfere with the way I work."
@@ -297,7 +306,8 @@ label ch2_s2_2:
 
 label ch2_s2_3:
     "Silence falls as we all analyse the past year in our heads."
-    "With the mood gone south, we all begin to head our separate ways. No one is in the mood to joke around like usual. Something weird is going on. I can feel it."
+    "With the mood gone south, we all begin to head our separate ways. No one is in the mood to joke around like usual."
+    "Something weird is going on. I can feel it."
     "I just hope we will survive it as a team."
     jump ch2_s3
 
@@ -305,9 +315,11 @@ label ch2_s3:
     scene aunt room night with Fade(0.75, 0.5, 0.5)
     show rene neutral
     "In the evening I decide to visit my Aunt Matilda. The two of us have always had a close relationship."
-    "Aside from my team members whom I've known for a year now, she is my closest friend. While other friends entered my life and left it, she remained a pillar of stability."
+    "Aside from my team members whom I've known for a year now, she is my closest friend."
+    "While other friends entered my life and left it, she remained a pillar of stability."
     "There is a difference in ages of course. But Aunt Matilda feels 20 years younger than she is. She is my mother’s younger sister."
-    "Always cheerful and kind, she has her own studio where she paints. Her paintings hang in the city’s gallery and sell for piles of money."
+    "Always cheerful and kind, she has her own studio where she paints."
+    "Her paintings hang in the city’s gallery and sell for piles of money."
     am "Hi, Rene! Oh, what happened to you?"
     "She notices the ugly bruise on my arm which refuses to fade. It changes color everyday and glares back as I glare at it."
     show rene happy
@@ -327,7 +339,8 @@ label ch2_s3:
     r "...I suppose."
     "But why did it suddenly stop hurting? I look at it and the bruise is much less remarkable. Weird."
     am "So... is there anything troubling you? You don't normally bump into furniture."
-    "I wish I could talk about my super life with her. An outsider's perspective on what is happening would be so valuable, especially my Aunt's who I know deeply cares about me."
+    "I wish I could talk about my super life with her."
+    "An outsider's perspective on what is happening would be so valuable, especially my Aunt's who I know deeply cares about me."
     am "If you are not gonna say anything, I'm going to get angry!"
 
 menu:
@@ -342,7 +355,8 @@ label boy_ch2:
     am "Finally love troubles, oh my cute little Rene!"
     show rene shy
     r "No no no! Not that kind of trouble!"
-    am "I thought you'd never find a boy you would be interested in. As open as you are to meeting new people, you've never been interested in forming such a close attachment to anyone but your friends."
+    am "I thought you'd never find a boy you would be interested in."
+    am "As open as you are to meeting new people, you've never been interested in forming such a close attachment to anyone but your friends."
     r "I'm just... I have to know someone first before I'm attracted to them."
     am "Oh, I understand that. Don't worry. Do you want to talk about it?"
     show rene neutral
@@ -364,7 +378,8 @@ label ch2_s3_2:
     show rene happy
     r "Oh yes! My favourite cake is bound to cheer me up!"
     am "To the kitchen then!"
-    "We spend some time baking a cake and talking about nothing important. I feel relieved not having to think about my troubles for a few hours."
+    "We spend some time baking a cake and talking about nothing important."
+    "I feel relieved not having to think about my troubles for a few hours."
     jump ch2_s4
 
 label ch2_s4:
@@ -375,10 +390,12 @@ label ch2_s4:
     st "Why are they sending us on another similar quest? And so soon? Bolt is still not fully healed..."
     show bolt surprised
     b "Actually I am. Don't know how but I am."
-    "I looked over my wounds yesterday evening and surprisingly they were all healed. I have no idea what caused this sudden acceleration but it happened."
+    "I looked over my wounds yesterday evening and surprisingly they were all healed."
+    "I have no idea what caused this sudden acceleration but it happened."
     show bolt neutral
     b "Let's get this over and done with quickly."
-    "This time it's just the two of us. The higher-ups decided a smaller team would be sufficient. I just hope we don't run into Dawn."
+    "This time it's just the two of us. The higher-ups decided a smaller team would be sufficient."
+    "I just hope we don't run into Dawn."
     "It's the same routine as last time. We dispatch the guards and enter the warehouse. We split and look for the right box."
     if villain >= 20:
         "This time around I don't kill but only becuase I don't want to antagonise my teammate."
@@ -388,18 +405,21 @@ label ch2_s4:
     "Suddenly Shadow appears behind Stoneman and kicks his feet from under him. Stoneman goes down but rolls over and stands up quickly."
     show stoneman angry
     st "I see you've arrived!"
-    "I look around to see if I can spot the other Dawn members coming. But it's quiet. Shadow slips into the darkness and reappears a distance away."
+    "I look around to see if I can spot the other Dawn members coming."
+    "But it's quiet. Shadow slips into the darkness and reappears a distance away."
     show bolt surprised
     b "Did you come alone today?"
     sh "...yes."
-    "Huh. That's surprising. Maybe this is just a diversion then and the others are attacking a Dusk warehouse as we speak? It's happened before."
+    "Huh. That's surprising."
+    "Maybe this is just a diversion then and the others are attacking a Dusk warehouse as we speak? It's happened before."
     show bolt neutral
     b "Stoneman, we should leave quickly."
     st "Not before we complete the mission."
     "Stoneman runs up to Shadow and throws a punch, but Shadow blocks him and slips away."
     show stoneman angry
     st "Bolt, don't just stand there! Help me!"
-    "I should help Stoneman so that we can complete our mission. But I don't want to fight Shadow... I don't feel comfortable with the idea anymore and after our arguement... I don't want to worsen our relations."
+    "I should help Stoneman so that we can complete our mission. But I don't want to fight Shadow..."
+    "I don't feel comfortable with the idea anymore and after our arguement... I don't want to worsen our relations."
     "Wait, what am I thinking? Shadow is our enemy. Why did seeing him live a normal life affect me so much?"
     st "Bolt! What are you doing?!"
     "Shadow and Stoneman are fighting but no side is winning. What should I do?"
@@ -428,7 +448,8 @@ label look_ch2:
         st "What...? Re- Bolt! Please help!"
         b "...sorry, I can't."
     "Shadow looks at me for a moment with a look in his eyes that I can't decipher. I don't wait to watch the fight."
-    "I spend the next few minutes looking for the package, while Stoneman and Shadow fight it out. I can feel Stoneman's anger radiating and Shadow has his characteristic smirk."
+    "I spend the next few minutes looking for the package, while Stoneman and Shadow fight it out."
+    "I can feel Stoneman's anger radiating and Shadow has his characteristic smirk."
     show stoneman angry
     st "What's so funny?!"
     show shadow happy
@@ -443,7 +464,8 @@ label look_ch2:
 label fight_ch2:
     "Forget my weird feelings. I have to help my friend, Stoneman. I will figure out my emotions later."
     show shadow sad
-    "I join the fight and together Stoneman and I quickly overpower Shadow. I see the disappointment on Shadow's face. It hurts to see him this way."
+    "I join the fight and together Stoneman and I quickly overpower Shadow."
+    "I see the disappointment on Shadow's face. It hurts to see him this way."
     "I don't know what to think anymore. We are enemies. I'm doing my job. It should feel right but it just doesn't."
     hide shadow with dissolve
     "Eventually Shadow retreats and we find the package."
@@ -464,7 +486,8 @@ label refuse_ch2:
     else:
         st "Tch... just... nevermind! I... I got this!"
     show shadow happy
-    "Shadow has his characteristic smirk on his face. He's pleased with my decision. I mean, I'm not fighting the enemy, I'm not doing my job, I feel so stupid. But I can't move."
+    "Shadow has his characteristic smirk on his face. He's pleased with my decision."
+    "I mean, I'm not fighting the enemy, I'm not doing my job, I feel so stupid. But I can't move."
     hide shadow with dissolve
     "Eventually Stoneman overpowers Shadow and Shadow retreats from the fight. We find the package."
     b "I'm sorry, Stoneman."
@@ -516,7 +539,8 @@ label ch2_s5_2:
     m "Folks, calm down...!"
     st "You mean your feelings! Exactly what is your relationship with Shadow?"
     b "What are you implying?"
-    st "Nothing. I can see there's something going between you. Has been for a while. You just enjoy each other's company too much and avoid fighting."
+    st "Nothing. I can see there's something going between you. Has been for a while."
+    st "You just enjoy each other's company too much and avoid fighting."
     b "What?! That's ridiculous! There is nothing between us. You're just imagining things!"
     f "Actually, I agree with Stoneman. The way you behave around Shadow is not normal for enemies..."
     b "Not you too?! Leave me alone! I will feel and do what I want!"
@@ -531,15 +555,15 @@ label ch2_s5_b1:
 
     if ch2choice == "LOOK":
         st "I'm just... trying to understand. I needed your help, Bolt. And instead, you just..."
-        "The whole Dusk team is gathered in our secret base and Bastion is quietly voicing his displeasure over my actions during the mission."
+        "The whole Dusk team is gathered in our secret base, and Bastion is quietly voicing his displeasure over my actions during the mission."
         b "I furthered our mission objective, didn't I? We were looking for a package, not fighting Dawn!"
     elif ch2choice == "FIGHT":
         st "Bolt, you... I noticed that you hesitated."
-        "The whole Dusk team is gathered in our secret base and Bastion is quietly voicing his displeasure over my actions during the mission."
+        "The whole Dusk team is gathered in our secret base, and Bastion is quietly voicing his displeasure over my actions during the mission."
         b "..."
     else:
         st "Bolt, I needed your help! What happened?"
-        "The whole Dusk team is gathered in our secret base and Bastion is quietly voicing his displeasure over my actions during the mission."
+        "The whole Dusk team is gathered in our secret base, and Bastion is quietly voicing his displeasure over my actions during the mission."
         b "..."
 
 menu:
@@ -576,12 +600,14 @@ label ch2_s5_b2:
 label ch2_s6:
     scene park night with Fade(0.75, 0.5, 0.5)
     show rene neutral
-    "I need some fresh air so on my way back home I take the longer route through the park. The main alleys are well-lit. It's well past 3 am, so there's nobody here... or so I thought but now I hear singing."
+    "I need some fresh air so on my way back home I take the longer route through the park. The main alleys are well-lit."
+    "It's well past 3 am, so there's nobody here... or so I thought but now I hear singing."
     show rene at right with move
     show samuel sad at left with dissolve
     s "♫ ♫ ♫"
     "It's a sad song about loss and loneliness. And I recognise the voice. It's Shadow... Samuel singing."
-    "I feel like this song suits him more than the one we sang at his class... but... that's not a very nice thought, is it? That loneliness and sadness suit someone."
+    "I feel like this song suits him more than the one we sang at his class... but..."
+    "That's not a very nice thought, is it? That loneliness and sadness suit someone."
     s "♫ ♫ ♫"
     "Come to think of it, he always has this aura of melancholy around him. It feels as if he cannot allow himself to be happy."
     show rene sad
@@ -593,11 +619,14 @@ menu:
     "Admit that you want to become closer to Samuel":
         $ samuel += 5
         $ villain += 5
-        "And I... yes, I would like to be his friend. Not his enemy or a stranger... I cannot deny that I've always felt a sense of connection with him and I want to pursue it."
+        "And I... yes, I would like to be his friend. Not his enemy or a stranger..."
+        "I cannot deny that I've always felt a sense of connection with him and I want to pursue it."
         jump ch2_s7
     "Samuel is your enemy. It's not appropriate to befriend him.":
-        "No, this is wrong! Samuel is my enemy, why would I try to be closer to him? So what if I feel a connection to him? I should squash those feelings while I still can, not pursue them."
-        "I finish the song. Not giving Samuel the chance to say anything, I phase out and then start walking quickly in the direction of home."
+        "No, this is wrong! Samuel is my enemy, why would I try to be closer to him? So what if I feel a connection to him?"
+        "I should squash those feelings while I still can, not pursue them."
+        "I finish the song."
+        "Not giving Samuel the chance to say anything, I phase out and then start walking quickly in the direction of home."
         "I will not be confused anymore."
         jump ch3_s1_1
 
@@ -622,7 +651,8 @@ label ch2_s7:
     "I laugh at that."
     r "Even I have moments where I don't believe in myself. Despite how I act, I don't believe I'm invincible."
     s "I believe I've been deceived."
-    r "I’m sorry to hurt you. Besides the fact that I never thought I could sing professionally, I also really like numbers. I’m happy with my choice of major and excited to graduate and work using my skills."
+    r "I’m sorry to hurt you. Besides the fact that I never thought I could sing professionally, I also really like numbers."
+    r "I’m happy with my choice of major and excited to graduate and work using my skills."
     show samuel neutral
     s "Your major is something related to numbers?"
     r "Economics."
@@ -643,7 +673,8 @@ label flirt_ch2:
     show rene happy
     r "You're not so bad yourself, handsome!"
     s "I see... so you like my looks."
-    r "Well, I like your singing voice too and I like how being around you brings out my competitive side... be it an argument or a fight, I'm never bored."
+    r "Well, I like your singing voice too and I like how being around you brings out my competitive side."
+    r "Be it an argument or a fight, I'm never bored."
     s "I get where you're coming from. I feel the same."
     "Oh..."
     "I meant- I... wanted to be friends... I didn't uh-"
@@ -653,7 +684,8 @@ label flirt_ch2:
     jump ch2_s7_2
 
 label ignore_ch2:
-    "I want to be friends with Samuel so it's better if I don't acknowledge that part. Besides he could have just meant he finds me aesthetically pleasing. Don't jump to conclusions, Rene!"
+    "I want to be friends with Samuel so it's better if I don't acknowledge that part."
+    "Besides he could have just meant he finds me aesthetically pleasing. Don't jump to conclusions, Rene!"
     "I should just change the subject."
     show rene neutral
     r "There's something I wanted to talk about. I need to apologise for what I said that day in my room."
@@ -686,7 +718,8 @@ menu:
 
 label ch2_s7_3:
     show samuel neutral
-    s "...Uh well, I was scared about how that would change our relationship. Knowing each other in real life... talking normally... singing together..."
+    s "...Uh well, I was scared about how that would change our relationship."
+    s " Knowing each other in real life... talking normally... singing together..."
     show rene surprised
     r "Ah, so we're worried about the same thing."
     show rene neutral
@@ -694,12 +727,16 @@ label ch2_s7_3:
     s "A hero and a villain? Which is which though?"
     show rene surprised
     r "That's-"
-    s "Not as obvious as you think it is. You are as much a villain to me as I am to you. I would not work for Dawn if I didn't think it was the right side..."
+    s "Not as obvious as you think it is. You are as much a villain to me as I am to you."
+    s "I would not work for Dawn if I didn't think it was the right side..."
     r "I didn't think-"
-    s "You thought I was evil, did you not? Guess what - there are very few truly evil people in the world. But I guess I might as well be, isn’t it that most evil people believe they’re in the right too."
+    s "You thought I was evil, did you not? Guess what - there are very few truly evil people in the world."
+    s "But I guess I might as well be, isn’t it that most evil people believe they’re in the right too."
     show samuel happy
-    s "It's up to you to decide how you see me. I'd just ask you to judge me based on my actions, not based off of any ideas others put in your pretty little head."
-    "There is so much truth to what he is saying. I always believed Dusk and Dawn are polar opposites, pure good and pure evil… but what if I was wrong?"
+    s "It's up to you to decide how you see me."
+    s "I'd just ask you to judge me based on my actions, not based off of any ideas others put in your pretty little head."
+    "There is so much truth to what he is saying. I always believed Dusk and Dawn are polar opposites, pure good and pure evil…"
+    "But what if I was wrong?"
     "Even if the organisations are right and wrong, the people can have their own set of morals."
     if bastion >= 15:
         "If I told Bastion... I wonder how it would change his outlook."
@@ -722,13 +759,15 @@ label ask_ch2:
     "I need to know more about him. It's a bit of a private subject but he can always refuse to answer if he doesn't want to."
     r "If I may ask... why'd you need money so badly?"
     show samuel sad
-    s "Well... I'm the only one who takes care of my brother... he's sick, I need money for his treatment and enough for us to be able to live somewhat comfortably..."
+    s "Well... I'm the only one who takes care of my brother."
+    s "He's sick. I need money for his treatment and enough for us to be able to live somewhat comfortably..."
     s "I still wanted to pursue music and this was the only way I saw it could be possible."
     show rene surprised
     r "Ahh...I'm sorry for prying into your private life!"
     show samuel neutral
     s "Don't worry about it. I wanted to tell you."
-    "This is why he always seem so sad... taking care of a sick loved one must be hard, especially if you are as young as we are and studying while also being supers."
+    "This is why he always seem so sad..."
+    "Taking care of a sick loved one must be hard, especially if you are as young as we are and studying while also being supers."
     show rene happy
     r "You're a strong person."
     s "I'm not."
@@ -739,6 +778,7 @@ label ask_ch2:
 label ch2_s7_4:
     show rene happy
     show samuel happy
-    "We talk a bit more about our daily lives. Eventually I yawn. It's late and I'm tired. We have a day off college tomorrow but it would still be good to go to sleep before morning comes."
+    "We talk a bit more about our daily lives. Eventually I yawn. It's late and I'm tired."
+    "We have a day off college tomorrow but it would still be good to go to sleep before morning comes."
     "We say our goodbyes and part ways. I feel giddy thanks to talking to him. I really enjoyed our time together."
     jump ch3_s1_1

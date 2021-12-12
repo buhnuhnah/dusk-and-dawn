@@ -3,7 +3,8 @@ label ch3_s2:
     show bolt neutral at rightish
     show shadow neutral at leftish
     "I almost lose consciousness after that but then I no longer hear them behind us. It worked. But... where should we go?"
-    "The only safe place I can think of now that is close enough to reach before we collapse is Aunt Matilda's house. I hope Aunty won't ask too many questions when we arrive at her house bearing such wounds."
+    "The only safe place I can think of now that is close enough to reach before we collapse is Aunt Matilda's house."
+    "I hope Aunty won't ask too many questions when we arrive at her house bearing such wounds."
     "No matter. I will explain everything to her if I must. For now, the important thing is for us to be safe."
     b "We're going to... my Aunt's house... neither Dusk nor Dawn should have the information on where it is..."
     sh "Alright... sounds good..."
@@ -16,7 +17,8 @@ label ch3_s2:
 label ch3_s3_1:
     scene aunt room day with Fade(0.75, 0.5, 0.5)
     show bolt neutral
-    "I wake up feeling surprisingly well. I look myself over... my wounds are healed. How much time has passed? I grab some of my clothes I left by Aunt Matilda's in case of a sleepover and go down to the living room."
+    "I wake up feeling surprisingly well. I look myself over... my wounds are healed."
+    "How much time has passed? I grab some of my clothes I left by Aunt Matilda's in case of a sleepover and go down to the living room."
     hide bolt neutral
     show rene neutral
     with dissolve
@@ -41,7 +43,8 @@ label ch3_s3_1:
     show rene surprised
     sh "How did you know?!"
     r "Whoa...!"
-    am "Well, where do I even begin... first, you barged into my house in a state close to death... in what I can only describe as either superhero outfits or cosplay..."
+    am "Well, where do I even begin..."
+    am "First, you barged into my house in a state close to death... in what I can only describe as either superhero outfits or cosplay..."
     am "And then there is the fact that I, as a healer, can read other people's superpower signatures. So I know you've used your powers recently and what they are..."
     r "A healer?! Then that time I came to you with the wound on my arm..."
     am "That time and several times before, I healed you."
@@ -65,7 +68,8 @@ label ch3_s3_1:
     am "For two days."
     show rene surprised
     r "Two days?!"
-    am "Yes, you were near death when you came here. Samuel was in a better state but I had to wait several times for my healing power to recharge before I had healed you enough for you to wake up."
+    am "Yes, you were near death when you came here."
+    am "Samuel was in a better state but I had to wait several times for my healing power to recharge before I had healed you enough for you to wake up."
     am "Even with your accelerated healing, your bodies wouldn't be able to heal themselves in time before death."
     show rene neutral
     sh "We owe you our lives. Thank you."
@@ -73,7 +77,8 @@ label ch3_s3_1:
     show rene happy
     r "This was the only safe place I could think of."
     am "I'm happy you consider my home safe."
-    am "There's something I wish to tell you about Dusk and Dawn though. If you feel like you are ready to hear something that will change the way you see the world."
+    am "There's something I wish to tell you about Dusk and Dawn though."
+    am "If you feel like you are ready to hear something that will change the way you see the world."
     show rene neutral
     r "That's... quite dramatic. But I'm ready."
     sh "Let's hear it."
@@ -97,7 +102,8 @@ menu:
 label ch3_s3_2:
     am "At one point Daylight split into two organizations: Dusk and Dawn. Both of those groups believe the other to be the evil one. Is that correct?"
     r "Well, yes, that's what I've been told all the time. That Dawn is evil and we need to save the world from them."
-    sh "And we've heard of the ambitions of Dusk. That they want to change the world to fit their perception of good and that they won't hesitate to destroy anyone or anything."
+    sh "And we've heard of the ambitions of Dusk."
+    sh "That they want to change the world to fit their perception of good and that they won't hesitate to destroy anyone or anything."
 
 menu:
     "Agree with Samuel":
@@ -113,7 +119,8 @@ label ch3_s3_agree:
         am "What actions?"
         show rene happy
         r "Ah... it's nothing important, Aunty!"
-        "I kick Samuel in the shin but he just smirks in response. How dare he try to tell my Aunt of all people I killed someone? Last thing I need is for her to hate me."
+        "I kick Samuel in the shin but he just smirks in response."
+        "How dare he try to tell my Aunt of all people I killed someone? Last thing I need is for her to hate me."
     jump ch3_s3_3
 
 label ch3_s3_deny:
@@ -146,8 +153,10 @@ menu:
 
 label ch3_s3_3:
     "Aunt Matilda clears her throat."
-    am "About that. When Daylight split into Dusk and Dawn it was a decision on the higher-ups' part. It was not due to infighting. To be precise - infighting is what they wanted to cause."
-    am "Each time a member of Dusk fights a member of Dawn while wearing their superhero outfit, you power up a crystal embedded in your clothes. That crystal transmits this energy to the Daylight Core in Daylight's headquarters."
+    am "About that. When Daylight split into Dusk and Dawn it was a decision on the higher-ups' part."
+    am "It was not due to infighting. To be precise - infighting is what they wanted to cause."
+    am "Each time a member of Dusk fights a member of Dawn while wearing their superhero outfit, you power up a crystal embedded in your clothes."
+    am "That crystal transmits this energy to the Daylight Core in Daylight's headquarters."
     am "The leaders want to use this power to take over the city... and later the whole state."
     show rene surprised
     show shadow surprised
@@ -184,7 +193,8 @@ label ch3_s3_3:
     show rene neutral
     r "Thank you for all the information, Aunty. Now we need to figure out what our next step will be."
     am "I will leave you to it then. It's time to make lunch anyway."
-    "Aunt Matilda leaves us and soon we hear music playing from the kitchen and the sound of pots and pans. Aunty sings a happy song. She shouldn't be able to hear us talking."
+    "Aunt Matilda leaves us and soon we hear music playing from the kitchen and the sound of pots and pans."
+    "Aunty sings a happy song. She shouldn't be able to hear us talking."
     show shadow neutral
     sh "Your Aunt... she's-"
     show rene happy
@@ -193,7 +203,8 @@ label ch3_s3_3:
     sh "We have quite the path ahead of us, don't we?"
     show rene neutral
     "It's just the two of us now. As everything slows down, the situation really starts to sink in for me."
-    "Gosh... this is all so crazy. Never had it crossed my mind that there was something bigger than the both of us, using us. Pitting us against each other."
+    "Gosh... this is all so crazy."
+    "Never had it crossed my mind that there was something bigger than the both of us, using us. Pitting us against each other."
     "An organization bent on taking over the world... using our powers."
     "What do we even do about this?"
     if samuel >= 20 and villain >= 25:
@@ -208,9 +219,11 @@ label ch3_s3_villain:
     sh "Why don't we just leave all of this behind?"
     show rene surprised
     r "What do you mean, leaving everything behind?!"
-    sh "Think about it. Neither Dusk or Dawn are good organisations. You and I know this now. Why don't we use the powers we've been given to do our own good?"
+    sh "Think about it. Neither Dusk or Dawn are good organisations. You and I know this now."
+    sh "Why don't we use the powers we've been given to do our own good?"
     sh "No masters, no one to tell us what to do. We choose what's good, and what's not."
-    sh "If killing someone is for the greater good, it should be done. If they are more valuable to us alive, they should live. Simple as that."
+    sh "If killing someone is for the greater good, it should be done."
+    sh "If they are more valuable to us alive, they should live. Simple as that."
     r "Well, it makes sense to me. But... what exactly do you want to do?"
     sh "Start our own duo. Just us. Doing what we think is right."
     r "Wow... that's... I didn't expect...."
@@ -230,15 +243,20 @@ label ch3_s3_villain2:
     sh "Excellent."
     # CG 1: THE BOLT/SHADOW DUO BACK TO BACK
     scene cg1_villain_heart with Fade(0.5, 0.0, 0.5)
-    "This marks the start of our duo. We decided to leave the whole Dusk and Dawn problem behind. Of course the two organisations hunt us relentlessly."
+    "This marks the start of our duo. We decided to leave the whole Dusk and Dawn problem behind."
+    "Of course the two organisations hunt us relentlessly."
     "But instead of stealing items from warehouses and fighting against each other, we spend time actually helping people."
-    "I lost my friends, leaving them behind. But were they really my friends? Or just people I fought alongside because I had to? Samuel left his colleagues behind too. That made us grow closer together."
-    "The important thing is that we have each other and I'm happy. I'm doing what I always wanted to do. I wish I wasn't haunted by it all but you can't have everything."
+    "I lost my friends, leaving them behind."
+    "But were they really my friends? Or just people I fought alongside because I had to?"
+    "Samuel left his colleagues behind too. That made us grow closer together."
+    "The important thing is that we have each other and I'm happy. I'm doing what I always wanted to do."
+    "I wish I wasn't haunted by it all, but you can't have everything."
     "GOOD END 1: VILLAIN AT HEART"
     return
 label ch3_s3_villain3:
     show rene neutral
-    r "Samuel, I... we can't. Not now, at least. Not while our two teams are fighting each other. Not while Daylight plans to take over the world."
+    r "Samuel, I... we can't. Not now, at least."
+    r "Not while our two teams are fighting each other. Not while Daylight plans to take over the world."
     show shadow neutral
     "He's hurt, but I'm firm in this decision."
     sh "You're right... that might have been hasty on my part."
@@ -296,14 +314,16 @@ label ch3_s3_4:
         "And... everything that's happened with Bastion... I need to make sure."
     sh "Ah... and?"
     show rene neutral
-    r "We'll gather the group together. Tell them about everything we've just learned. We can stop this fighting, and focus on what matters. All of us."
+    r "We'll gather the group together. Tell them about everything we've just learned."
+    r "We can stop this fighting, and focus on what matters. All of us."
     "He seems like... he's doubting something. And I already have an idea where his head's at."
     r "I want you to be with me, please. It'll help a lot if you're there..."
     sh "... I'll follow. But the moment your friends try anything, I-"
     r "They won't. Not with me there."
     "Slowly, I see the doubt melt from his face."
     sh "... alright. Sounds good."
-    r "Getting them on board is the most important step of the plan. Without them, we don't stand a chance. After that, we can come back here-- away from the eyes of Daylight."
+    r "Getting them on board is the most important step of the plan. Without them, we don't stand a chance."
+    r "After that, we can come back here-- away from the eyes of Daylight."
     "We both give a nod to each other, and I start to lead the way."
     "Lead the way... towards what could be the biggest fight of all of our lives."
     jump ch3_s4_1

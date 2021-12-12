@@ -9,7 +9,8 @@ label ch3_s1_1:
         "Bastion should know this too, right?"
     f "Let's split up or we won't ever find the datastick!"
     st "Agreed. Such a small thing in such a big place. We'll never find it unless we comb through the whole building."
-    "I'm a bit uneasy about this. This warehouse doesn't have an open layout like the others. And it's much larger. We won't be in sight of each other and possibly not in hearing distance either."
+    "I'm a bit uneasy about this. This warehouse doesn't have an open layout like the others."
+    "And it's much larger. We won't be in sight of each other and possibly not in hearing distance either."
 
 menu:
     "Voice your concerns":
@@ -36,20 +37,25 @@ menu:
 label ch3_s1_2:
     hide stoneman with dissolve
     show bolt at center with ease
-    "As our leader commands, we split up and go into different areas of the warehouse. I look carefully through all the boxes trying to find what we seek."
+    "As our leader commands, we split up and go into different areas of the warehouse."
+    "I look carefully through all the boxes trying to find what we seek."
     "Why did we come here without knowing the exact location of this item?"
     "I keep getting this weird feeling that something is terribly wrong."
     ma "Hello, gorgeous!"
-    "I flinch when I hear Magno’s voice behind me. I turn around. He stands there, chains suspended in the air, flashing his teeth at me. The wide smile doesn’t reach his eyes. I flinch. It’s so creepy."
+    "I flinch when I hear Magno’s voice behind me. I turn around."
+    "He stands there, chains suspended in the air, flashing his teeth at me."
+    "The wide smile doesn’t reach his eyes. I flinch. It’s so creepy."
     show bolt at right with ease
     show shadow at left with dissolve
-    "I take my eyes off him and look to the right. Shadow is standing behind Magno. He nods when he sees me but then looks behind me and frowns when he realises I'm alone."
+    "I take my eyes off him and look to the right. Shadow is standing behind Magno."
+    "He nods when he sees me, but then looks behind me and frowns when he realises I'm alone."
     b "What do you want, Magno?"
     ma "Oh, what's with the cold greeting! Aren't you happy to see me?"
     show bolt angry
     b "Why would I be?!"
     ma "Well, I'm always happy to see you."
-    "A chain wraps around my waist from behind. Wait! Where did that come from? Since when can he control two sets of chains?!" with woosh
+    "A chain wraps around my waist from behind." with woosh
+    "Wait! Where did that come from? Since when can he control two sets of chains?!"
     ma "And to catch the little birdie!"
     "The chain tightens around me as I try to wiggle out of it."
     ma "Ah-ah, not so fast!"
@@ -59,7 +65,8 @@ label ch3_s1_2:
         ma "The little bitch murdered our men!"
         sh "As we killed Dusk guards many times."
     ma "She thinks she's a hero. Well guess what, Bolt? It's time to stop playing around."
-    "His other chain moves in and wraps around my throat. The metal moves like snakes and encloses around my whole body. Then he tightens them."
+    "His other chain moves in and wraps around my throat. The metal moves like snakes and encloses around my whole body."
+    "Then he tightens them."
     "It hurts. I would scream but I can't breathe."
 
     if bastion > 15:
@@ -70,7 +77,8 @@ label ch3_s1_2:
         # BAD END 1: ALONE AND FORGOTTEN
         show shadow sad
         show bolt sad
-        "All I wanted was to be a hero. To save the world from Dawn. But here I die in the warehouse alone and forgotten. My friends don't reach me in time and Samuel just stares sadly."
+        "All I wanted was to be a hero. To save the world from Dawn."
+        "But here I die in the warehouse alone and forgotten. My friends don't reach me in time and Samuel just stares sadly."
         "The world darkens as I suffocate."
         scene black with Fade(1.0, 0.0, 0.0)
         "BAD END 1: ALONE AND FORGOTTEN"
@@ -78,7 +86,8 @@ label ch3_s1_2:
 
 label ch3_s1_bastion:
     show stoneman angry at offscreenright
-    "Magno approaches me, a look of elation on his face. He's really enjoying it. His chains tighten around me even more and he suspends me in the air."
+    "Magno approaches me, a look of elation on his face. He's really enjoying it."
+    "His chains tighten around me even more and he suspends me in the air."
     play sound "slap.mp3" volume 0.8
     "Then he slaps me hard across the face." with hit
     show stoneman angry at center with ease
@@ -86,7 +95,8 @@ label ch3_s1_bastion:
     st "Get off of her, damn it!"
     "The next thing I see is Stoneman leaping through the air towards Magno. Before Magno can react, Bastion leans his head back..."
     play sound "hit.mp3" volume 0.6
-    "... and gives Magno the most devastating headbutt I've ever seen. The impact was sickening. The chains drop from me as Magno reels from the headbutt, and I fall to the floor." with hit
+    "... and gives Magno the most devastating headbutt I've ever seen. The impact was sickening." with hit
+    "The chains drop from me as Magno reels from the headbutt, and I fall to the floor."
     show bolt neutral
     "I'm trying desperately to catch my breath. I'm crying and wheezing. Not the image of a hero, but who cares."
     "I almost died...for real!"
@@ -106,7 +116,8 @@ menu:
         show bolt neutral
         show stoneman surprised
         show shadow sad
-        "I don't make it very far though, before I hear the sound of a gunshot. At the same time I feel excruciating pain in my chest. I look down to see... blood." with hit
+        "I don't make it very far though, before I hear the sound of a gunshot." with hit
+        "At the same time I feel excruciating pain in my chest. I look down to see... blood."
         "I cough up red and fall to the floor."
         "The last thing I see is Snapshots smiling face. She was my killer."
         "And the last thing I hear is Bastion calling out for my name."
@@ -126,7 +137,8 @@ label ch3_s1_bastion2:
     ma "Ow-- you fucker!" with woosh
     "Magno winces-- Bastion hardened himself to soften the blow."
     play sound "<to 1.0>punch.mp3" volume 0.6
-    "Bastion immediately takes advantage of the situation, and throws a hard right hook at Magno. It connects cleanly, sending Magno reeling back." with woosh
+    "Bastion immediately takes advantage of the situation, and throws a hard right hook at Magno."with woosh
+    "It connects cleanly, sending Magno reeling back."
     st "That'll shut you up!"
     play sound "<from 1.0>gunshots.mp3" volume 0.6
     "A spray of bullets hit Stoneman! Thankfully, his skin was already stonelike... if he was normal, that would've killed him!"
@@ -140,7 +152,8 @@ label ch3_s1_bastion2:
     st "Nngh...! No!"
     "Bastion...!"
     "Even though Shadow was the enemy, I watched Stoneman bull charge towards Snapshot."
-    "Snapshot smiles smugly at this. Her bait was taken. She aims her guns forward and unloads on Stoneman, her bullets chipping away at his stone skin."
+    "Snapshot smiles smugly at this. Her bait was taken."
+    "She aims her guns forward and unloads on Stoneman, her bullets chipping away at his stone skin."
     play sound "<from 1.0>gunshots.mp3" volume 0.6
     b "S-Stoneman!"
     show stoneman neutral
@@ -153,7 +166,8 @@ label ch3_s1_bastion2:
     b "Samuel, do you trust me?"
     show shadow neutral
     sh "Yes, I do."
-    "There is only one thing I can think of and it's risky. I can take the longest leap I've ever done with my powers. Straight outside the warehouse. And then we'll make a run for it."
+    "There is only one thing I can think of and it's risky."
+    "I can take the longest leap I've ever done with my powers. Straight outside the warehouse. And then we'll make a run for it."
 
 menu:
     "Make a leap of faith":
@@ -190,7 +204,9 @@ label ch3_s1_bastion3:
     show bolt neutral
     "There is no other choice. I need to try to teleport. Not only further away but with two people."
     ma "Fight me, you bitch!"
-    "I tune Magno out and focus on my powers. I feel the vortex pulling at me, the world in between reality and dreams which I briefly enter. Then I reappear... outside the warehouse."
+    "I tune Magno out and focus on my powers."
+    "I feel the vortex pulling at me, the world in between reality and dreams which I briefly enter."
+    "Then I reappear... outside the warehouse."
     b "Samuel, are you alright?!"
     "I look down at Samuel, then pat down his body."
     show shadow happy
@@ -224,12 +240,14 @@ label ch3_s1_bastion4:
     jump ch3_s2
 
 label ch3_s1_shadow:
-    "Magno approaches me, a look of elation on his face. He's really enjoying it. His chains tighten around me even more and he suspends me in the air."
+    "Magno approaches me, a look of elation on his face. He's really enjoying it."
+    "His chains tighten around me even more and he suspends me in the air."
     play sound "slap.mp3" volume 0.8
     "Then he slaps me hard across the face." with hit
     show shadow angry
     sh "Leave her alone, Magno!"
-    "Shadow throws himself at Magno and starts beating him up with his fists. The chains drop from me, Magno's concentration broken. I fall to the floor."
+    "Shadow throws himself at Magno and starts beating him up with his fists."
+    "The chains drop from me, Magno's concentration broken. I fall to the floor."
     "I'm trying desperately to catch my breath. I'm crying and making strange wheezing sounds. Not the image of a hero but who cares."
     "What the fuck! I almost died here! For real!"
     sh "Ouch!"
@@ -264,7 +282,8 @@ label ch3_s1_shadow2:
     b "Samuel, do you trust me?"
     show shadow neutral
     sh "Yes, I do."
-    "There is only one thing I can think of and it's risky. I could take the longest leap I ever did with my powers. Straight outside the warehouse. And then we'll take a run for it."
+    "There is only one thing I can think of and it's risky. I could take the longest leap I ever did with my powers."
+    "Straight outside the warehouse. And then we'll take a run for it."
 
 menu:
     "Take a leap of faith":
@@ -291,7 +310,9 @@ menu:
 label ch3_s1_shadow3:
     "There is no other choice. I need to try to teleport. Not only further away but with two people."
     ma "Fight me, you bitch!"
-    "I tune Magno out and focus on my powers. I feel the vortex pulling at me, the world in between reality and dreams which I briefly enter. Then I reappear... outside the warehouse."
+    "I tune Magno out and focus on my powers."
+    "I feel the vortex pulling at me, the world in between reality and dreams which I briefly enter."
+    "Then I reappear... outside the warehouse."
     show bolt neutral
     b "Samuel, are you alright?!"
     "I look down at Samuel then pat down his body."
@@ -310,12 +331,14 @@ menu:
         show shadow surprised
         "My answer surprises him but he quickly regains his composure and smiles back."
         show shadow neutral
-        "I grab Samuel by the hand and we run. Behind us I hear the door open. They are persuing us. I phase once more when we get to the park in hopes of losing them."
+        "I grab Samuel by the hand and we run. Behind us I hear the door open. They are persuing us."
+        "I phase once more when we get to the park in hopes of losing them."
         jump ch3_s2
     "Get angry at him":
         b "Stop being inappropriate, you idiot!"
         show shadow neutral
         sh "Fine... fine... I just wanted to lighten the mood."
         "Maybe I shouldn't have snapped at him like that but it's really annoying. This is no time and place for such conversations."
-        "I grab Samuel by the hand and we run. Behind us I hear the door open. They are persuing us. I phase once more when we get to the park in hopes of losing them."
+        "I grab Samuel by the hand and we run. Behind us I hear the door open. They are persuing us."
+        "I phase once more when we get to the park in hopes of losing them."
         jump ch3_s2

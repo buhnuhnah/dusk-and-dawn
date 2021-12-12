@@ -2,10 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 57: invalid syntax
-    $ dice = renpy.random.randint(20,50)*0.1
-     ^
-    
+File "game/chapters/ch1.rpy", line 717: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a " at the end of the first line.)
+        "At one point I rememeber a memory from my childhood.
 
 Ren'Py Version: Ren'Py 7.4.4.1439
-Sun Aug 29 21:53:18 2021
+Sat Dec 11 21:32:26 2021

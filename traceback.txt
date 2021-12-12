@@ -1,51 +1,55 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While loading <'Image' u'gui/game_menu.png'>:
-  File "renpy/common/00gamemenu.rpy", line 173, in script
-    $ ui.interact()
-  File "renpy/common/00gamemenu.rpy", line 173, in <module>
-    $ ui.interact()
-IOError: Couldn't find file 'gui/game_menu.png'.
+While loading <'Image' u'images/sprites/bolt.png'>:
+  File "game/chapters/ch1.rpy", line 169, in script
+    "I open the holo display of my watch. It glows a warm orange hue and shows the signature above my wrist. Looking at it I compare it to the labels on the boxes, trying to find a pattern."
+IOError: Couldn't find file 'images/sprites/bolt.png'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/00gamemenu.rpy", line 173, in script
-    $ ui.interact()
-  File "renpy/ast.py", line 922, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "renpy/python.py", line 2218, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "renpy/common/00gamemenu.rpy", line 173, in <module>
-    $ ui.interact()
+  File "game/chapters/ch1.rpy", line 169, in script
+    "I open the holo display of my watch. It glows a warm orange hue and shows the signature above my wrist. Looking at it I compare it to the labels on the boxes, trying to find a pattern."
+  File "renpy/ast.py", line 715, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "renpy/exports.py", line 1393, in say
+    who(what, *args, **kwargs)
+  File "renpy/character.py", line 1205, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "renpy/character.py", line 871, in do_display
+    **display_args)
+  File "renpy/character.py", line 621, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
   File "renpy/ui.py", line 298, in interact
     rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "renpy/display/core.py", line 3276, in interact
+  File "renpy/display/core.py", line 3101, in interact
     repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
-  File "renpy/display/core.py", line 3792, in interact_core
+  File "renpy/display/core.py", line 3611, in interact_core
     self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "renpy/display/core.py", line 2521, in draw_screen
+  File "renpy/display/core.py", line 2441, in draw_screen
     renpy.config.screen_height,
   File "render.pyx", line 492, in renpy.display.render.render_screen
   File "render.pyx", line 263, in renpy.display.render.render
-  File "renpy/display/layout.py", line 786, in render
+  File "renpy/display/layout.py", line 777, in render
     surf = render(child, width, height, cst, cat)
   File "render.pyx", line 170, in renpy.display.render.render
   File "render.pyx", line 263, in renpy.display.render.render
-  File "renpy/display/layout.py", line 786, in render
+  File "renpy/display/layout.py", line 777, in render
     surf = render(child, width, height, cst, cat)
   File "render.pyx", line 170, in renpy.display.render.render
   File "render.pyx", line 263, in renpy.display.render.render
-  File "renpy/display/layout.py", line 786, in render
+  File "renpy/display/layout.py", line 777, in render
     surf = render(child, width, height, cst, cat)
   File "render.pyx", line 170, in renpy.display.render.render
   File "render.pyx", line 263, in renpy.display.render.render
-  File "renpy/display/screen.py", line 681, in render
-    child = renpy.display.render.render(self.child, w, h, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
+  File "renpy/display/transform.py", line 933, in render
+    return transform_render(self, width, height, st, at)
+  File "accelerator.pyx", line 116, in renpy.display.accelerator.transform_render
   File "render.pyx", line 263, in renpy.display.render.render
-  File "renpy/display/layout.py", line 786, in render
-    surf = render(child, width, height, cst, cat)
+  File "renpy/display/image.py", line 501, in render
+    return wrap_render(self.target, width, height, st, at)
+  File "renpy/display/image.py", line 307, in wrap_render
+    rend = render(child, w, h, st, at)
   File "render.pyx", line 170, in renpy.display.render.render
   File "render.pyx", line 263, in renpy.display.render.render
   File "renpy/display/im.py", line 607, in render
@@ -54,9 +58,9 @@ Full traceback:
     surf = image.load()
   File "renpy/display/im.py", line 688, in load
     raise e
-IOError: Couldn't find file 'gui/game_menu.png'.
+IOError: Couldn't find file 'images/sprites/bolt.png'.
 
 Windows-10-10.0.19041
-Ren'Py 7.4.6.1693
+Ren'Py 7.4.4.1439
 Dusk and Dawn 1.0
-Wed Oct 20 08:17:17 2021
+Sat Dec 11 20:13:17 2021
