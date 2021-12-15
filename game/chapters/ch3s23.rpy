@@ -45,7 +45,8 @@ label ch3_s3_1:
     r "Whoa...!"
     am "Well, where do I even begin..."
     am "First, you barged into my house in a state close to death... in what I can only describe as either superhero outfits or cosplay..."
-    am "And then there is the fact that I, as a healer, can read other people's superpower signatures. So I know you've used your powers recently and what they are..."
+    am "And then there is the fact that I, as a healer, can read other people's superpower signatures."
+    am "So I know you've used your powers recently and what they are..."
     r "A healer?! Then that time I came to you with the wound on my arm..."
     am "That time and several times before, I healed you."
     show shadow neutral
@@ -170,7 +171,8 @@ label ch3_s3_3:
     b "Could that be why they didn't reign in Magno's murderous intent?"
     am "Probably. You getting beat up so badly has served them well in terms of the amount of power gathered."
     sh "And if they suspected that Rene and I might have noticed something strange about our organisations..."
-    am "Then it's not surprising they wanted to get rid of you. And that they have done it in a way in which they could gain the most from your deaths."
+    am "Then it's not surprising they wanted to get rid of you."
+    am "And that they have done it in a way in which they could gain the most from your deaths."
     show rene surprised
     r "Oh my God! That's crazy!"
     am "It is a lot to take in."

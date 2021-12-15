@@ -16,7 +16,8 @@ label endings:
     "And... I need to figure out if I want to do it alone."
     "Not just the \"being a hero\" thing... everything else."
     "So much has happened. I've grown closer with a lot of people. People who I think I might want to share my life with."
-    "I've been standing here for a good bit now, looking at my phone. The name of the person I trust the most was sitting there, one tap away from what could potentially be the biggest change of our lives."
+    "I've been standing here for a good bit now, looking at my phone."
+    "The name of the person I trust the most was sitting there, one tap away from what could potentially be the biggest change of our lives."
 
 menu:
     "No. I shouldn't":
@@ -37,7 +38,8 @@ label rene_end:
 
     scene bridge with Fade(0.75, 0.5, 0.5)
     show rene neutral at center
-    "There is something relaxing about looking out into the big blue. The gentle tinge of saltwater teasing my nostrils does a lot to relax my nerves."
+    "There is something relaxing about looking out into the big blue."
+    "The gentle tinge of saltwater teasing my nostrils does a lot to relax my nerves."
     "A nice cool breeze, pure silence..."
     "The perfect place to make a big decision."
     r "Deep breath, Rene."
@@ -57,7 +59,8 @@ label rene_peace:
     "I've done my duty. Others will continue the fight for me. I'm not going to make a difference either way if I keep it up."
     "So instead of doing that, I'm going to make the only choice that really, truly matters."
     "..."
-    "Hm... Aunt Matilda's casserole the other day was pretty great. I should learn how to make that. The store isn't too far away. I'll stop by on the way home."
+    "Hm... Aunt Matilda's casserole the other day was pretty great. I should learn how to make that."
+    "The store isn't too far away. I'll stop by on the way home."
     "I should probably study too. Been a little distracted in class recently."
     "Yes, that sounds like a plan. A hot meal, a hot bath..."
     show rene happy
@@ -69,7 +72,8 @@ label rene_peace:
 label rene_fight:
     "I started it. It would be irresponsible for me to just abandon everything."
     "Besides, would Daylight actually let me lead a peaceful life? I better strike first."
-    "And besides, it's not like I have to do it alone. Mia's been telling everyone who matters about Daylight. Surely, I'll make some new friends down the road."
+    "And besides, it's not like I have to do it alone."
+    "Mia's been telling everyone who matters about Daylight. Surely, I'll make some new friends down the road."
     "Fighting across the country... finishing what I started... it only feels right."
     if villain <= 15:
         jump rene_hero
@@ -82,12 +86,13 @@ menu:
 
 label rene_hero:
     "I'm a hero. I was made to do this."
-    "I've grown out of it recently, but I need to get back into it. And I think I'll start by going home, looking in the mirror, and saying..."
+    "I've grown out of it recently, but I need to get back into it."
+    "I think I'll start by going home, looking in the mirror, and saying..."
     show rene happy
     r "Bolt."
     "Bolt."
     show rene neutral
-    "You'll learn to fear that name Daylight."
+    "You'll learn to fear that name, Daylight."
     scene black with Fade(0.75, 0.5, 0.75)
     "GOOD END 3: BOLT"
     return
@@ -153,14 +158,16 @@ label shadow_end:
     show rene happy
     "Samuel was so hot against me, I felt myself melting into him, becoming one with him."
     "We've harmonized before, but not like this."
-    "He puts his hands on the sides of my face to hold me where he wants me. Once he's sure I'm not going to go away, his hands move up my face and he begins to twirl my locks."
+    "He puts his hands on the sides of my face to hold me where he wants me."
+    "Once he's sure I'm not going to go away, his hands move up my face and he begins to twirl my locks."
     "Caught in the moment, I forget everything else, even my own name."
     s "How's that?"
     "He lets me breathe a moment."
     r "... eh, it was... alright? I'd give it a seven out of ten at best."
     "My words make him hungry, but he relents."
     "We spend some time with each other on the bridge. Just the two of us."
-    "I can tell he was just waiting for me to get past all of this cheap fluff. He knew there was something more pressing on my mind. I mean, why did I choose someplace dramatic like a bridge on some random afternoon?"
+    "I can tell he was just waiting for me to get past all of this cheap fluff. He knew there was something more pressing on my mind."
+    "I mean, why did I choose someplace dramatic like a bridge on some random afternoon?"
     "The sun's setting, as though the world's telling me I'm taking too long. This is it, now or never."
     "I take a deep breath. Samuel takes that as a sign and stands straight up, ready to receive me."
     "I need to choose my words carefully..."
@@ -196,7 +203,8 @@ label shadow_date:
     r "I thought you wanted {i}me{/i} to pick the spot?"
     s "Yeah, for the date. This isn't a date. I want you to meet someone close to me."
     show samuel happy
-    s "My little brother. If we're going to be together... well, me and my brother are a package deal. You have to take care of him too, you know."
+    s "My little brother. If we're going to be together... well, me and my brother are a package deal."
+    s "You have to take care of him too, you know."
     show rene happy
     r "Ha, you sound like that's going to be a deal breaker for me! Take me to meet the little squirt."
     "With that said and done..."
@@ -278,14 +286,16 @@ label bastion_end:
     "At that moment, I remember who I'm with."
     "And I've never felt so calm so fast."
     "We speak at length. About... well, anything and everything that passes our minds."
-    "He talked to me about a start up charity that wants to supply games and toys to therapy facilities and hospitals. I talked about the high score I got in a rhythm game the other day."
+    "He talked to me about a start up charity that wants to supply games and toys to therapy facilities and hospitals."
+    "I talked about the high score I got in a rhythm game the other day."
     "No matter where our minds wander, the other follows it. I feel like we could talk forever."
     "That, combined with the beautiful view of the ocean... it's like we're in a constant state of reverie."
     show bastion neutral
     ba "... it feels crazy."
     show rene neutral
     r "What does?"
-    ba "We were suiting up and acting like heroes a short time ago. Now... I argue that we could convince ourselves that it was all some strange dream."
+    ba "We were suiting up and acting like heroes a short time ago."
+    ba "Now... I argue that we could convince ourselves that it was all some strange dream."
     show rene sad
     r "... yeah."
     ba "Oh, sorry. I shouldn't have brought that up..."
@@ -301,7 +311,8 @@ label bastion_end:
     show bastion neutral
     ba "... I like you alot, Rene. My feelings for you have been guiding some of the things I've said to you... some of the things I do."
     ba "I didn't want you to put yourself at risk because I didn't want to see you hurt."
-    ba "I didn't throw myself in front of Magno for the greater good. I did it because I wanted to preserve you. So you could continue being in my future."
+    ba "I didn't throw myself in front of Magno for the greater good."
+    ba "I did it because I wanted to preserve you. So you could continue being in my future."
     r "..."
     show bastion shy
     ba "I'm sorry if I ever worried you, Rene. I'll go ahead an-"
@@ -390,7 +401,8 @@ label bastion_work:
     "Maybe it wasn't the answer I wanted but... maybe it was the answer I needed."
     ba "Is that what you want, Rene?"
     r "... yes. Even if I don't feel responsible, I can't let these people run free and do whatever they want."
-    "All this time, I kept convincing myself that I {i}should{/i}. When in reality, it's because my convictions are too strong, too firm to let me sit on the side."
+    "All this time, I kept convincing myself that I {i}should{/i}."
+    "When in reality, it's because my convictions are too strong, too firm to let me sit on the side."
     "I'm a hero through and through."
     "I have someone to thank for that."
     ba "If you're that firm... then I'm coming with you."

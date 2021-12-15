@@ -5,7 +5,8 @@ label ch4_s3_bastion:
     ba "Well, I certainly can't let you go alone."
     show bolt neutral
     r "I won't be alone, I'll be with Mag- ah... yeah. Right...."
-    ba "Remember what your aunt said... there's bound to be some heavy resistance down there. I want to lend my strength against whatever it is."
+    ba "Remember what your aunt said... there's bound to be some heavy resistance down there."
+    ba "I want to lend my strength against whatever it is."
     ba "When we fight together as a team... as a duo... we're unstoppable."
     "Bastion... this boost in confidence is exactly what I needed."
     s "Hey, don't keep us waiting, yeah? Fighting robots is starting to drag."
@@ -26,18 +27,22 @@ label ch4_s4_bastion1:
     "It was a long descent. As the two of us rush down the stairs, I try to keep an eye out for Magno who's already moved ahead of us."
     ba "I wonder what he's trying to do, rushing ahead like that..."
     r "Whatever the reason, he should've waited for us."
-    "It gets colder and darker the further we descend. I have no idea how deep in the earth we are, but I understand now why they were so bold with their bomb."
+    "It gets colder and darker the further we descend."
+    "I have no idea how deep in the earth we are, but I understand now why they were so bold with their bomb."
     "As soon as our feet hit the ground, we are greeted with the source of the bright light."
-    "A gigantic orange crystal, sitting at the other end of the room. It's enormous, standing  from floor to ceiling. It looks alot like the crystal that was inside of the bomb."
+    "A gigantic orange crystal, sitting at the other end of the room."
+    "It's enormous, standing  from floor to ceiling. It looks alot like the crystal that was inside of the bomb."
     "The bomb that... I'm holding."
-    "Besides the complicated looking technology surrounding it, consisting of a bunch of terminals, there's nothing else here. It's just a big, plain room."
+    "Besides the complicated looking technology surrounding it, consisting of a bunch of terminals, there's nothing else here."
+    "It's just a big, plain room."
     "At least, I think it is... the crystal is the only source of dim light."
     ba "If a small crystal can cause a large explosion... I don't even want to imagine the destruction a crystal of this size could cause."
     "I gulp."
     r "That must be why they built this place so far underground..."
     ma "You two. Hurry up already."
     "The both of us were so enamored with the crystal, we didn't even notice Magno standing a few feet in front of us."
-    "He's just facing the crystal, staring it down. I swear, if I didn't know any better, I would've assumed he was trying to have a staring contest with the thing."
+    "He's just facing the crystal, staring it down."
+    "I swear, if I didn't know any better, I would've assumed he was trying to have a staring contest with the thing."
     r "Right... come on! Let's make this quick."
     "I move forward, bomb in hand. I whisper to myself the instructions on how to arm the bomb again..."
     "That's very important."
@@ -56,13 +61,15 @@ label ch4_s4_bastion1:
     "A hulking behemoth of steel. Like one of those mechs you'd see in a show, or a video game."
     show bolt neutral
     show stoneman neutral
-    "It's facing us. At least, I {i}think{/i} it is. It doesn't have any eyes, but the dangerous looking drill it has in place of one of its hands is pointed right at us."
+    "It's facing us. At least, I {i}think{/i} it is."
+    "It doesn't have any eyes, but the dangerous looking drill it has in place of one of its hands is pointed right at us."
     "... and the large gun mounted on its right shoulder."
     ma "Hmph! What a spectacular creation! A shame that machines cannot be persuaded with human sentiments..."
     ma "... but I will make it bend all the same."
     "Magno steps forward confidently, and we watch. He begins to raise his hand."
     "I begin to feel a massive power building within Magno. I can tell he's going to give his all."
-    ma "You had the gall to use me. To claim me as some pawn in your scheme. Yet, when you decide to make an enemy out of me, you don't even grant me any proper opposition!"
+    ma "You had the gall to use me. To claim me as some pawn in your scheme."
+    ma "Yet, when you decide to make an enemy out of me, you don't even grant me any proper opposition!"
     ma "It's clear to me that not only did you not pay attention... but you do not fear me! And I will personally seek to make amends of that fact!"
     ma "Witness, firsthand, my magnificent power!"
     "He brings his hands together in a crushing motion towards the giant robot."
@@ -86,9 +93,11 @@ label ch4_s4_bastion1:
     r "You're dead weight right now!"
     play sound "lazer.mp3"
     show bolt neutral
-    "I didn't catch the twisted look on his face for long as I'm forced to teleport again. If I hadn't, that bullet would've ended me instantly." with woosh
+    "I didn't catch the twisted look on his face for long as I'm forced to teleport again." with woosh
+    "If I hadn't, that bullet would've ended me instantly."
     show stoneman neutral
-    "I look back to see the crater the bullet made in the wall- the shells this beast is firing are huge! Even Bastion's powers wouldn't be able to deflect those..."
+    "I look back to see the crater the bullet made in the wall- the shells this beast is firing are huge!"
+    "Even Bastion's powers wouldn't be able to deflect those..."
     ba "Let's go, Rene! We  can defeat this together!"
     "Bastion hardens his skin and rushes towards the robot at an angle."
     r "Right!"
@@ -98,7 +107,8 @@ menu:
     "Let Bastion lead!":
         r "I'm following your lead, Bastion!"
         ba "Right! Follow-up after me!"
-        "The gun aims at Bastion and fires off a couple of rounds. He's nimble enough to not get hit directly, but there's a couple of close calls."
+        "The gun aims at Bastion and fires off a couple of rounds."
+        "He's nimble enough to not get hit directly, but there's a couple of close calls."
         "As he gets closer, the robot is forced to ready its drill. It begins to spin, making this loud, constant, terrible sound."
         "Bastion doesn't even flinch."
         "As the robot thrusts its drill at Bastion, he leaps up over the drill and runs up the robot's arm."
@@ -118,7 +128,8 @@ menu:
         play sound "<from 10.0>metal-hit.mp3"
         "He takes advantage of the ploy, rushing up underneath the robot and smashing his fist into one of its legs." with woosh
         stop sound fadeout 2.0
-        "Even with the gift of steel limbs, it still couldn't hold its balance. Bastion grabs one of its arms and yanks it down into a kneeling position."
+        "Even with the gift of steel limbs, it still couldn't hold its balance."
+        "Bastion grabs one of its arms and yanks it down into a kneeling position."
         ba "I have it, Rene!"
         "Here goes nothing...!"
         jump ch4_s4_bastion2
@@ -133,10 +144,12 @@ label ch4_s4_bastion2:
     ba "Wh-what the..."
     show bolt surprised
     r "...!"
-    "I peer down to see Bastion reeling. He was looking at his hands- at the expanding patches of his own flesh as the stone parts of his body melt away."
+    "I peer down to see Bastion reeling."
+    "He was looking at his hands- at the expanding patches of his own flesh as the stone parts of his body melt away."
     "He's reverting back to his normal self! Whatever this mist is, it's rendering him useless!"
     r "Bastion! They put some kind of chemical in the mist! You need to-"
-    "I wasn't allowed to finish my sentence as the air left my lungs. In my moment of distraction, the hand clamps itself around me, holding me in a vice grip."
+    "I wasn't allowed to finish my sentence as the air left my lungs."
+    "In my moment of distraction, the hand clamps itself around me, holding me in a vice grip."
     "I can't breathe."
     show stoneman angry
     ba "N-No...! Rene! Don't worry, I-"
@@ -176,7 +189,8 @@ label ch4_s4_bastion2:
     "I take a deep breath, lurch forward, and give it a huge smack to the side. The gun turns to point directly towards the robot's head."
     "And in that instant..."
     play sound "lazer.mp3"
-    "The robot's head acquires a new, large hole. The steel behemoth crumbles to the ground in a mix of sparks and smoke, taking me with it." with hit
+    "The robot's head acquires a new, large hole."
+    "The steel behemoth crumbles to the ground in a mix of sparks and smoke, taking me with it." with hit
     "It was down."
     "Mia saved my life... again."
     show bolt surprised
@@ -277,7 +291,8 @@ label ch4_s4_bastion2:
     "One bullet placed between his eyes." with hit
     "Aiden crumples to the ground, lifeless."
     l "I've always wanted to do that, ever since we started working together. I thought about doing it when he was sleeping, but..."
-    l "I didn't want to just rob him of his final {i}breath{/i}, but his final {i}words{/i}. I wanted him to look me in the eye and have no question on who was responsible for the worst part of his life."
+    l "I didn't want to just rob him of his final {i}breath{/i}, but his final {i}words{/i}."
+    l "I wanted him to look me in the eye and have no question on who was responsible for the worst part of his life."
     "..."
     "It was chilling, how she was just so... nonchalant about it. There was no sentiment about it."
     "Just a cold blooded kill."
@@ -286,7 +301,8 @@ label ch4_s4_bastion2:
     l "... hey, we came here to do something. If you're not going to do it, then I'm going to."
     r "You'll...?"
     l "I've always wanted to blow something up. Besides, you look like you need a good rest. You {i}and{/i} your boyfriend."
-    l "So... why don't you leave this to me and go join your friends at your Aunt's place? They left already, and I have a feeling they're dying to see you."
+    l "So... why don't you leave this to me and go join your friends at your Aunt's place?"
+    l "They left already, and I have a feeling they're dying to see you."
     r "What about you...?"
     l "Eh... chances are, you'll probably never see me again. Sorry, I'm a little too old for your group."
     l "None of your business, anyway. Come on, hand it over."

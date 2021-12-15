@@ -5,7 +5,8 @@ label ch1:
     show stoneman at offscreenleft with ease
     "Moonlight falls on the windowless building before us. The industrial area is dark at night, so unlike the rest of the city."
     "I suppose there is no point in lighting a building at night whose only purpose is to store items and datasticks."
-    "There are no humans working here, except for the guards. They are equipped with flashlights, making them easy targets. So they won't be working here very long."
+    "There are no humans working here, except for the guards."
+    "They are equipped with flashlights, making them easy targets. So they won't be working here very long."
     show bolt neutral with dissolve
     "I teleport behind the nearest guard. Even in the darkness, it's easy to guess where to strike."
 
@@ -705,7 +706,7 @@ label scene4:
     "A note lands in front of me."
     show bastion happy
     "I look to my right at Bastion and he points to it with his pen."
-    "\"Try to be less obvious about not paying attention to the class \:)\" it says."
+    "\"Try to be less obvious about not paying attention to the class\" it says."
     "Crap. I was indeed quite deep in thought."
     "Back to class it is then. Better focus before the teacher catches me. I don't need more trouble in my life."
     jump scene5

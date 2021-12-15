@@ -13,7 +13,8 @@ label ch4_s3_shadow:
     s "Huh?"
     ba "...thank you."
     s "..."
-    "They trade a nod of understanding with each other, before Samuel places his hand on the small of my back, and we both descend through the bunker doors."
+    "They trade a nod of understanding with each other, before Samuel places his hand on the small of my back."
+    "We both descend through the bunker doors."
     jump ch4_s4_shadow1
 
 label ch4_s4_shadow1:
@@ -24,11 +25,14 @@ label ch4_s4_shadow1:
     "It's a long descent. As the two of us rushed down the stairs, I tried to keep an eye out for Magno, who's already moved ahead of us."
     s "You know... he was always sort of a glory hog."
     r "Oh yeah? Huh. Never would've guessed."
-    "It gets colder and darker the further we descend. I have no idea how deep in the earth we are, but I understand now why they were so bold with their bomb."
+    "It gets colder and darker the further we descend."
+    "I have no idea how deep in the earth we are, but I understand now why they were so bold with their bomb."
     "As soon as our feet hit the ground, we are greeted with the source of the bright light."
-    "A gigantic orange crystal, sitting at the other end of the room. It's enormous, standing  from floor to ceiling. It looks alot like the crystal that was inside of the bomb."
+    "A gigantic orange crystal, sitting at the other end of the room."
+    "It's enormous, standing  from floor to ceiling. It looks alot like the crystal that was inside of the bomb."
     "The bomb that... I'm holding."
-    "Besides the complicated looking technology surrounding it, consisting of a bunch of terminals, there's nothing else here. It's just a big, plain room."
+    "Besides the complicated looking technology surrounding it, consisting of a bunch of terminals, there's nothing else here."
+    "It's just a big, plain room."
     "At least, I think it is... the crystal is the only source of dim light."
     s "... so, the bomb you're holding. If a crystal of that size can level a large building..."
     "I gulp."
@@ -51,13 +55,15 @@ label ch4_s4_shadow1:
     "Before us, on the opposite side of the room..."
     show shadow neutral
     "A hulking behemoth of steel. Like one of those mechs you'd see in a show, or a video game."
-    "It's facing us. At least, I {i}think{/i} it is. It doesn't have any eyes, but the dangerous looking drill it has in place of one of its hands is pointed right at us."
+    "It's facing us. At least, I {i}think{/i} it is."
+    "It doesn't have any eyes, but the dangerous looking drill it has in place of one of its hands is pointed right at us."
     "... and the large gun mounted on its right shoulder."
     ma "Hmph! What a spectacular creation! A shame that machines cannot be persuaded with human sentiments..."
     ma "... but I will make it bend all the same."
     "Magno steps forward confidently, and we watch. He begins to raise his hand."
     "I begin to feel a massive power building within Magno. I can tell he's going to give his all."
-    ma "You had the gall to use me. To claim me as some pawn in your scheme. Yet, when you decide to make an enemy out of me, you don't even grant me any proper opposition!"
+    ma "You had the gall to use me. To claim me as some pawn in your scheme."
+    ma "Yet, when you decide to make an enemy out of me, you don't even grant me any proper opposition!"
     ma "It's clear to me that not only did you not pay attention... but you do not fear me! And I will personally seek to make amends of that fact!"
     ma "Witness, firsthand, my magnificent power!"
     "He brings his hands together in a crushing motion towards the giant robot."
@@ -96,7 +102,8 @@ menu:
         s "Then try not to stare! Ha!"
         show shadow neutral
         play sound "shadow.mp3" volume 0.8
-        "Shadow uses the shadows the machine was casting to send tendrils out of it, slamming it into various parts. The tendrils wrap around the machine, contricting it."
+        "Shadow uses the shadows the machine was casting to send tendrils out of it, slamming it into various parts."
+        "The tendrils wrap around the machine, contricting it."
         jump ch4_s4_shadow2
     "I'll take the lead!":
         r "Follow my lead!"
@@ -107,7 +114,8 @@ menu:
         "The gun aims towards me, but I'm ready for it. Everytime it even dares to shoot at me, I teleport a short distance."
         "I was dodging shell after shell, keeping the attention of the gun off of Samuel. It was a perfect distraction."
         play sound "shadow.mp3" volume 0.8
-        "Samuel eventually follows up, using the shadows that the machine casted to create tendrils. The tendrils wrapped around the machine, constricting it."
+        "Samuel eventually follows up, using the shadows that the machine casted to create tendrils."
+        "The tendrils wrapped around the machine, constricting it."
         jump ch4_s4_shadow2
 
 label ch4_s4_shadow2:
@@ -123,7 +131,8 @@ label ch4_s4_shadow2:
     "My eyes adjust just barely to see that the robot was the one emitting this bright light."
     "Wait a second, if it's filling the room with bright light, that means... Samuel's powers are useless!"
     r "Samuel! They're prepared for you! You need to-"
-    "I wasn't allowed to finish my sentence as the air left my lungs. In my moment of distraction, the hand clamps itself around me, holding me in a vice grip."
+    "I wasn't allowed to finish my sentence as the air left my lungs."
+    "In my moment of distraction, the hand clamps itself around me, holding me in a vice grip."
     "I can't breathe."
     show shadow angry
     s "R-Rene! Are you okay?! I can't see y-"
@@ -162,7 +171,8 @@ label ch4_s4_shadow2:
     "I take a deep breath, lurch forward, and give it a huge smack to the side. The gun turns to point directly towards the robot's head."
     "And in that instant..."
     play sound "lazer.mp3"
-    "The robot's head acquires a new,  large hole. The steel behemoth crumbles to the ground in a mix of sparks and smoke, taking me with it." with hit
+    "The robot's head acquires a new,  large hole."
+    "The steel behemoth crumbles to the ground in a mix of sparks and smoke, taking me with it." with hit
     "It was down."
     "Mia saved my life... again."
     show bolt surprised
@@ -259,14 +269,16 @@ label ch4_s4_shadow2:
     "One bullet placed between his eyes." with hit
     "Aiden crumples to the ground, lifeless."
     l "I've always wanted to do that, ever since we started working together. I thought about doing it when he was sleeping, but..."
-    l "For someone who tries to get the last word all the time, it's a lot more satisfying when you rob him of it. It's {i}especially{/i} satisfying looking him in the eye as he took it all in."
+    l "For someone who tries to get the last word all the time, it's a lot more satisfying when you rob him of it."
+    l "It's {i}especially{/i} satisfying looking him in the eye as he took it all in."
     "..."
     show bolt neutral
     "Levina walks across the room towards us, taking hold of the bomb in my hand. I hold onto it, not wanting to give it over."
     l "... hey, we came here to do something. If you're not going to do it, then I'm going to."
     r "You'll...?"
     l "I've always wanted to blow something up. Besides, you look like you need a good rest. You {i}and{/i} your boyfriend."
-    l "So... why don't you leave this to me and go join your friends at your Aunt's place? They left already, and I have a feeling they're dying to see you."
+    l "So... why don't you leave this to me and go join your friends at your Aunt's place?"
+    l "They left already, and I have a feeling they're dying to see you."
     r "What about you...?"
     l "Eh... chances are, you'll probably never see me again. Sorry, I'm a little too old for your group."
     l "None of your business, anyway. Come on, hand it over."

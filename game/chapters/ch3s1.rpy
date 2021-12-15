@@ -213,7 +213,7 @@ label ch3_s1_bastion3:
     sh "I'm fine. When did you get so touchy-feely?"
     show bolt angry
     b "Not now, you idiot! I need to check if anything's disintegrated!"
-    sh "I assure you everything is in the right place.Or do you want me to undress to see for sure?"
+    sh "I assure you everything is in the right place. Or do you want me to undress to see for sure?"
     "I realise he's flirting with me."
 
 menu:

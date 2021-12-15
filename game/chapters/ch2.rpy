@@ -11,7 +11,7 @@ label ch2_s1:
     "When I approach the classroom I can hear singing inside. Whoever's singing has a beautiful voice."
     show samuel sad with dissolve
     show rene happy at offscreenright
-    s "♫ ♫ ♫"
+    s "*lyrics*"
     "He looks familiar but he's too far for me to tell for sure."
     "But man, this song is supposed to be a happy one. Why is he struggling to convey happiness so much?"
     "Prof. Smith" "Again, Samuel. This song is supposed to be about joy. Your singing is making me sad instead."
@@ -31,8 +31,8 @@ label sing_ch2:
     show samuel happy at left
     with move
     "I step inside the classroom and join Samuel in singing."
-    r "♫ ♫ ♫"
-    s "♫ ♫ ♫"
+    r "*lyrics*"
+    s "*lyrics*"
     "It worked! We finish the song together with smiles on our faces."
     "That smirk... oh my gosh, I do know him! Samuel is... Shadow! Woah!"
     s "Thank you!"
@@ -604,14 +604,14 @@ label ch2_s6:
     "It's well past 3 am, so there's nobody here... or so I thought but now I hear singing."
     show rene at right with move
     show samuel sad at left with dissolve
-    s "♫ ♫ ♫"
+    s "*lyrics*"
     "It's a sad song about loss and loneliness. And I recognise the voice. It's Shadow... Samuel singing."
     "I feel like this song suits him more than the one we sang at his class... but..."
     "That's not a very nice thought, is it? That loneliness and sadness suit someone."
-    s "♫ ♫ ♫"
+    s "*lyrics*"
     "Come to think of it, he always has this aura of melancholy around him. It feels as if he cannot allow himself to be happy."
     show rene sad
-    r "♫ ♫ ♫"
+    r "*lyrics*"
     show samuel neutral
     "I know the song so I join in. I... really think Samuel needs a friend. He notices my presence and smiles a sad smile."
 
