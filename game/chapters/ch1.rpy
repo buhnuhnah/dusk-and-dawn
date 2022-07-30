@@ -1,13 +1,13 @@
 label ch1:
     scene warehouse night
-    show stoneman neutral with dissolve
+    show stoneman neutralsmile at center with dissolve
     st "Alright, Dusk, keep moving! We're almost at the warehouse!"
     show stoneman at offscreenleft with ease
+    show bolt neutral onlayer mc at side with dissolve
     "Moonlight falls on the windowless building before us. The industrial area is dark at night, so unlike the rest of the city."
     "I suppose there is no point in lighting a building at night whose only purpose is to store items and datasticks."
     "There are no humans working here, except for the guards."
     "They are equipped with flashlights, making them easy targets. So they won't be working here very long."
-    show bolt neutral with dissolve
     "I teleport behind the nearest guard. Even in the darkness, it's easy to guess where to strike."
 
 menu:
@@ -77,7 +77,7 @@ menu:
 label warehouse2:
     "Guard 2" "It's Dusk, we are under attack!"
     show bolt neutral at right with ease
-    show stoneman neutral at left with dissolve
+    show stoneman neutralfrown at left with dissolve
     "Dusk - that's us. Three friends with special powers who formed a superhero team."
     "And then there's Mia, our hacker."
     "Currently we are here to secure a package from this warehouse."
@@ -94,7 +94,7 @@ label warehouse2:
 
 label no_wkills:
     f "Aren't you a bit too happy about fighting?"
-    show stoneman neutral
+    show stoneman neutralsmile
     st "Oh, well... I just can't help it, y'know? I'm pretty good at the whole \"fighting evil\" thing!"
     st "Well, compared to everything else..."
     show bolt happy
@@ -113,7 +113,7 @@ label boost_ego:
     m "Enough with the flirting!"
     show bolt shy
     b "...flirting? I'm not...!"
-    show stoneman neutral
+    show stoneman neutralsmile
     show bolt neutral
     jump warehouse3
 
@@ -126,7 +126,7 @@ label make_joke:
     st "Haha! Oof... I felt that one..."
     b "Sorry guys!"
     show bolt neutral
-    show stoneman neutral
+    show stoneman neutralsmile
     jump warehouse3
 
 label wkills:
@@ -139,7 +139,7 @@ label wkills:
     show bolt happy
     b "Nothing."
     show bolt neutral
-    show stoneman neutral
+    show stoneman neutralfrown
     jump warehouse3
 
 label warehouse3:
@@ -150,7 +150,7 @@ label warehouse3:
     f "Let's continue with the mission! The sooner we can find the package, the less risk we run into Dawn."
     "Dawn is a supervillain team. Our enemies. There are three of them, and lately we've run into them way too often."
     "Unlike those guards they pose a real threat. I hate to admit it but their superpowers equal our own."
-    show stoneman neutral
+    show stoneman neutralfrown
     "We enter the building. Boxes are piled upon boxes all the way to the ceiling."
     show bolt surprised
     b "That's a lot of packages! How do we find the right one?"
@@ -241,13 +241,13 @@ label warehouse4:
     "Shadow hides in darkness again. Meanwhile Magno and Frostbite are fighting it out."
     m "I know where the package is. It's not far away from Frostbite's location."
     "We all hear Mia's voice right in our ears through the communication devices."
-    show stoneman neutral at left with dissolve
+    show stoneman neutralfrown at left with dissolve
     st "She can't secure it now that Dawn is here. We should abort the mission."
     b "No! I can cover Frostbite while she grabs the box!"
     show stoneman surprised
     st "Are you sure? It's dangerous!"
     b "It will be fine."
-    show stoneman neutral
+    show stoneman neutralfrown
     st "Ok, if you say so. Bolt, cover Frostbite. Frostbite, grab the package."
     hide stoneman
     hide bolt
@@ -351,7 +351,7 @@ label scene2:
     r "As long as we win, it doesn't matter if I get a bit hurt. It's my own decision to act this way. Please respect it."
     m "Oh God, why..."
     a "This is unbelievable..."
-    show stoneman neutral
+    show stoneman neutralsmile
     ba "Thank you, Rene."
     show bolt happy
     r "No problem at all!"
@@ -404,7 +404,7 @@ label dont_explain:
     if spare1kill2 == True:
         ba "What?! Rene, after everything I said?! How could you! I thought you were... I thought..."
         r "...you wouldn't understand anyway."
-        show stoneman neutral
+        show stoneman neutralfrown
         ba "...you're right. I don't plan on making it a habit to understand and sympathize with murderers."
         ba "I hope you feel proud of yourself, Rene. You just betrayed everything we stood for."
     else:
@@ -418,7 +418,7 @@ label lie:
     show bolt angry
     r "She's lying! I would never do something like that!"
     a "But... you did it in front of me. Why are you lying?"
-    show stoneman neutral
+    show stoneman neutralfrown
     ba "That's quite an accusation, Alicia. I don't believe Rene would kill anyone..."
     a "But she did! She snapped a guard's neck in front of me with her own hands!"
     if villain > 5:
@@ -487,7 +487,7 @@ label scene3_2a:
     play sound "hit.mp3" volume 0.6
     b "Stoneman!" with hit
     "He crumbles to the ground, but I manage to catch him."
-    show stoneman neutral
+    show stoneman neutralsmile
     st "Bolt... are you okay?"
 
 menu:
@@ -510,7 +510,7 @@ menu:
         "He took that for me... because he thinks it's a good thing?"
         jump scene3_2a_end
 label scene3_2a_end:
-    show stoneman neutral
+    show stoneman neutralfrown
     st "Sorry Rene, I have to... rest my eyes..."
     "He begins to fade in my arms. I clutch him close."
     show bolt surprised

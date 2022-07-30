@@ -1,66 +1,40 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While loading <'Image' u'images/sprites/bolt.png'>:
-  File "game/chapters/ch1.rpy", line 169, in script
-    "I open the holo display of my watch. It glows a warm orange hue and shows the signature above my wrist. Looking at it I compare it to the labels on the boxes, trying to find a pattern."
-IOError: Couldn't find file 'images/sprites/bolt.png'.
+After initialization, but before game start.
+  File "renpy/common/00start.rpy", line 83, in _init_language
+    renpy.change_language(language)
+  File "game/screens.rpy", line 135, in <module>
+    xalign gui.textbox_xalign
+AttributeError: 'StoreModule' object has no attribute 'textbox_xalign'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/chapters/ch1.rpy", line 169, in script
-    "I open the holo display of my watch. It glows a warm orange hue and shows the signature above my wrist. Looking at it I compare it to the labels on the boxes, trying to find a pattern."
-  File "renpy/ast.py", line 715, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "renpy/exports.py", line 1393, in say
-    who(what, *args, **kwargs)
-  File "renpy/character.py", line 1205, in __call__
-    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
-  File "renpy/character.py", line 871, in do_display
-    **display_args)
-  File "renpy/character.py", line 621, in display_say
-    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
-  File "renpy/ui.py", line 298, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "renpy/display/core.py", line 3101, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
-  File "renpy/display/core.py", line 3611, in interact_core
-    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "renpy/display/core.py", line 2441, in draw_screen
-    renpy.config.screen_height,
-  File "render.pyx", line 492, in renpy.display.render.render_screen
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "renpy/display/layout.py", line 777, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "renpy/display/layout.py", line 777, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "renpy/display/layout.py", line 777, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "renpy/display/transform.py", line 933, in render
-    return transform_render(self, width, height, st, at)
-  File "accelerator.pyx", line 116, in renpy.display.accelerator.transform_render
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "renpy/display/image.py", line 501, in render
-    return wrap_render(self.target, width, height, st, at)
-  File "renpy/display/image.py", line 307, in wrap_render
-    rend = render(child, w, h, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "renpy/display/im.py", line 607, in render
-    return cache.get(self, render=True)
-  File "renpy/display/im.py", line 271, in get
-    surf = image.load()
-  File "renpy/display/im.py", line 688, in load
-    raise e
-IOError: Couldn't find file 'images/sprites/bolt.png'.
+  File "C:\Users\vyana\OneDrive\Documents\renpy\renpy-7.4.4-sdk\renpy\bootstrap.py", line 274, in bootstrap
+    renpy.main.main()
+  File "C:\Users\vyana\OneDrive\Documents\renpy\renpy-7.4.4-sdk\renpy\main.py", line 660, in main
+    run(restart)
+  File "C:\Users\vyana\OneDrive\Documents\renpy\renpy-7.4.4-sdk\renpy\main.py", line 76, in run
+    renpy.translation.init_translation()
+  File "C:\Users\vyana\OneDrive\Documents\renpy\renpy-7.4.4-sdk\renpy\translation\__init__.py", line 583, in init_translation
+    renpy.store._init_language() # type: ignore
+  File "renpy/common/00start.rpy", line 83, in _init_language
+    renpy.change_language(language)
+  File "C:\Users\vyana\OneDrive\Documents\renpy\renpy-7.4.4-sdk\renpy\translation\__init__.py", line 667, in change_language
+    new_change_language(tl, language)
+  File "C:\Users\vyana\OneDrive\Documents\renpy\renpy-7.4.4-sdk\renpy\translation\__init__.py", line 629, in new_change_language
+    i.apply()
+  File "C:\Users\vyana\OneDrive\Documents\renpy\renpy-7.4.4-sdk\renpy\ast.py", line 2907, in apply
+    value = renpy.python.py_eval(expr)
+  File "C:\Users\vyana\OneDrive\Documents\renpy\renpy-7.4.4-sdk\renpy\python.py", line 1080, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "C:\Users\vyana\OneDrive\Documents\renpy\renpy-7.4.4-sdk\renpy\python.py", line 1073, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/screens.rpy", line 135, in <module>
+    xalign gui.textbox_xalign
+AttributeError: 'StoreModule' object has no attribute 'textbox_xalign'
 
-Windows-10-10.0.19041
-Ren'Py 7.4.4.1439
+Windows-10-10.0.22000 AMD64
+Ren'Py 8.0.1.22070801
 Dusk and Dawn 1.0
-Sat Dec 11 20:13:17 2021
+Sat Jul 30 11:14:41 2022

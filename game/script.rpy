@@ -13,16 +13,19 @@ transform farright:
     xalign 0.95
 transform flip:
     xzoom -1.0
+transform side:
+    xalign 0.05
+    yalign 1.0
 
 #CHARACTER DEFINITIONS
 define ba = Character("Bastion")
-define st = Character("Stoneman")
+define st = Character("Stoneman", image='stoneman')
 
 define a = Character("Alicia")
 define f = Character("Frostbite")
 
 define r = Character("Rene")
-define b = Character("Bolt")
+define b = Character("Bolt", image="bolt")
 
 define m = Character("Mia")
 
@@ -49,6 +52,7 @@ image warehouse alarm:
 init python:
     config.searchpath.extend(["game/audio", "game/images/backgrounds"])
     dice = renpy.random.randint(2,8)*0.1
+    renpy.add_layer('mc', above='overlay')
 
     # POINT TRACKERS
     villain = 0

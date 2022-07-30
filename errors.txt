@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/chapters/ch1.rpy", line 717: is not terminated with a newline. (Check strings and parenthesis.)
-(Perhaps you left out a " at the end of the first line.)
-        "At one point I rememeber a memory from my childhood.
+File "game/screens.rpy", line 159: end of line expected.
+    if last_say_who == 'rene' || last_say_who == 'bolt':
+    ^
 
-Ren'Py Version: Ren'Py 7.4.4.1439
-Sat Dec 11 21:32:26 2021
+Ren'Py Version: Ren'Py 8.0.1.22070801
+Sat Jul 30 11:11:25 2022
