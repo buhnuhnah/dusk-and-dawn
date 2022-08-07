@@ -1,18 +1,19 @@
 label ch2_s1:
-    scene college classroom day with Fade(0.75, 0.5, 0.5)
+    scene college classroom day
+    show rene neutral at side onlayer mc
+    with Fade(0.75, 0.5, 0.5)
     "The next day I feel a lot better, physically anyways."
     "I still have not reached a decision about whether my self-sacrificing behavior is a good thing or not."
     "Prof. Brown" "Rene, could you deliver those papers to Professor Smith in the Music department?"
     "That's the next building over on our campus."
-    show rene happy with dissolve
+    show rene happy onlayer mc
     r "Of course, Professor. Where can I find Professor Smith?"
     "My economics professor gives me the directions and I head to the Music department, a heroic quest to deliver some very important papers."
     scene college classroom day with fade
     "When I approach the classroom I can hear singing inside. Whoever's singing has a beautiful voice."
-    show samuel sad with dissolve
-    show rene happy at offscreenright
     s "*lyrics*"
     "He looks familiar but he's too far for me to tell for sure."
+    show rene neutral onlayer mc
     "But man, this song is supposed to be a happy one. Why is he struggling to convey happiness so much?"
     "Prof. Smith" "Again, Samuel. This song is supposed to be about joy. Your singing is making me sad instead."
     "The professor agrees with me... I guess the student is called Samuel."
@@ -27,13 +28,13 @@ menu:
         jump wait_ch2
 
 label sing_ch2:
-    show rene happy at right
-    show samuel happy at left
-    with move
+    show rene happy onlayer mc
+    show samuel smirk at center with dissolve
     "I step inside the classroom and join Samuel in singing."
     r "*lyrics*"
     s "*lyrics*"
     "It worked! We finish the song together with smiles on our faces."
+    show rene surprised onlayer mc
     "That smirk... oh my gosh, I do know him! Samuel is... Shadow! Woah!"
     s "Thank you!"
     "Prof. Smith" "...an unconventional way of solving the problem, but if it works, it works."
@@ -42,16 +43,15 @@ label sing_ch2:
 label wait_ch2:
     "I shouldn't interrupt. This Samuel might sound familiar, but I don't know him as far as I can tell."
     "It's almost hard to listen to though, he just makes the song sound sad."
-    show samuel neutral at left
-    show rene neutral at right
-    with move
     "When he finally finishes singing, I push open the door and make my presence known."
+    show rene surprised
+    show samuel neutral at center with dissolve
     "But as I step in closer I realise where I know Samuel from. Samuel is... Shadow! Woah!"
     jump ch2_s1_2
 
 label ch2_s1_2:
     "Prof. Smith" "Who are you? Are you one of our students? I don't recognise you."
-    show rene happy
+    show rene happy onlayer mc
     r "My name is Rene Garcia. I'm a student of economics, I just came from across the campus."
     show samuel surprised
     "At the sound of my voice, Shadow- Samuel freezes and looks at me wide-eyed."
@@ -64,7 +64,7 @@ menu:
         jump ch2_s1_3
     "Deny it":
         $ hide_identity = True
-        show rene neutral
+        show rene neutral onlayer mc
         r "You must have me mistaken for someone else."
         show samuel angry
         s "Don't lie to me! I know it's you."
@@ -74,10 +74,10 @@ label ch2_s1_3:
     show samuel angry
     s "What are you doing here?!"
     "Prof. Smith" "Do you know each other?"
-    show rene neutral
+    show rene neutral onlayer mc
     r "We work... together."
     s "Don't approach me outside of work."
-    show rene angry
+    show rene angry onlayer mc
     r "I'm not here because I'm stalking you or something. Professor Brown asked me to deliver those papers."
     "I hand the documents to Professor Smith."
     "Prof. Smith" "Ah, thank you."
@@ -86,10 +86,10 @@ label ch2_s1_3:
     s "Just leave. Now."
     r "Fine. I'm going, I'm going."
     hide samuel with dissolve
-    show rene at center with move
     "What the hell was that? Does he dislike the sight of me that much?"
+    show rene neutral onlayer mc
     "Maybe I hurt him more than I thought two days ago... and that's why he's so upset with me..."
-    show rene sad
+    show rene sad onlayer mc
     "Why does it hurt so much though? We're not even friends."
     if bastion >= 10:
         jump ch2_s1_b1
@@ -98,7 +98,7 @@ label ch2_s1_3:
 
 label ch2_s1_b1:
     "Ugh... i have to get my mind off of that."
-    show rene neutral
+    show rene neutral onlayer mc
     "By this point, class was over. I had decided to hang out with Dusk after classes in the park."
     "I wonder if I should head back and meet Bastion? Or maybe I should just head to the park..."
 menu:
@@ -111,42 +111,43 @@ menu:
 label ch2_s1_b2:
     "I should find him. Maybe we could talk about some of the thoughts I've been having recently..."
     "I dunno. Just anything to occupy my mind so I don't think about Samuel."
-    scene college classroom day with Fade(0.75, 0.5, 0.5)
-    show rene at offscreenright
+    scene college classroom day
+    hide rene onlayer mc
+    show rene neutral at side onlayer mc
+    with Fade(0.75, 0.5, 0.5)
     "I head back to the classroom after the bell's rung. Honestly, I'd be surprised if anyone was still in there."
-    show bastion at left with dissolve
-    show rene at right with move
+    show bastion worried at center with dissolve
     "He's writing so furiously- I swear, if he was writing any faster, I'd start seeing smoke come up from the paper."
-    show rene happy
+    show rene happy onlayer mc
     r "Bastion!"
     "...he doesn't respond? Not even a glance? He just keeps writing."
-    show rene neutral
+    show rene neutral onlayer mc
     r "Bastion?"
     "I walk up to him. He was paused in thought, absentmindedly drilling the eraser end of his pencil into his temple..."
     "I lean in front of him."
     r "Ba--"
     show bastion surprised
+    show rene surprised onlayer mc
     ba "Uwaaaah!" with sshake
     "He flails in surprise, sending a flurry of papers into the air."
-    show rene surprised
     r "W-woah!"
     ba "Rene?! Oh, I'm-- I'm sorry!"
     r "No, it's-- it's fine! Lemme just-- oof!"
     "As soon as I bend down to pick up some of the papers, my forehead collides with Bastion's."
     "Yeeowch! He's got a hard head!" with hit
-    show bastion neutral
+    show bastion worried
     ba "O-oh my goodness-- Rene! Are you okay?!"
-    show rene sad
-    r "Yes! Yes I'm-- I'm fine!"
+    show rene sad onlayer mc
+    r "Yes! Yes I'm-- I'm {i}fine{/i}!"
     ba "Are you sure? I can get you to the infirma-"
     "He's more worried about me {i}now{/i} than when I was injured?!"
-    show rene angry
+    show rene angry onlayer mc
     r "I said it's fiiiiine!"
+    show rene neutral onlayer mc
     "What a {i}disaster{/i}."
-    show rene neutral
     "After we both manage to gather the papers without getting a concussion, the two of us calm down."
+    show bastion neutralfrown
     "Well... {i}I{/i} have. Bastion still seems a bit embarrassed."
-    show rene neutral
     r "Bastion, are you okay?"
     ba "Yeah... my apologies, Rene. I was just... deep in thought."
     "Deep in thought? Hm..."
@@ -158,39 +159,43 @@ menu:
     "Ask what's on his mind.":
         $ bastion += 5
         r "Well?"
+        ba "Hm?"
         "I take a seat next to him. I guess he realizes what I'm about to say next, because he immediately looks sheepish."
-        show bastion shy
         r "Well... what's on your mind?"
-        ba "Oh, y-know..."
+        ba shy "Oh, y-know..."
         "..."
         "......"
         "........."
         r "I... don't know? Actually?"
         ba "I meant uh... school things, y'know?"
         "Uh-uh, no. That's not it."
-        show bastion neutral
+        show bastion neutralsmile
         ba "Like, for example, we just learned about collective decision making. I'm still thinking abo--"
         r "Is that what's really on your mind, Bastion?"
+        show bastion neutralfrown
         "He sighs. He's not very good at covering it up."
         "It's strange. He's so confident whenever we're out on the field, but right now? He's a pale image of the confident leader I always see."
-        ba "Maybe... not right now."
+        ba sad "Maybe... not right now."
         r "...alright. But remember this..."
         "I give him a poke on his hard, vulnerable forehead."
-        show rene happy
+        show rene happy onlayer mc
         r "We're a team!"
         show bastion shy
         "His cheeks flare, but he quickly saves face with that goofy grin I'm so familiar with."
         show bastion happy
         ba "Of course, of course! Haha, I can always rely on you, Rene!"
+        show rene neutral onlayer mc
         "...huh, why do I feel so disappointed?"
         "Truth be told, I kinda enjoyed that shy face of his. It was kinda..."
+        show rene surprised onlayer mc
         "Ah, what am I thinking?"
         jump ch2_s1_b4
 
 label ch2_s1_b4:
     show bastion happy
+    show rene neutral onlayer mc
     ba "Ahem. In whatever case... we should be heading to the park to meet the others, yes?"
-    show rene happy
+    show rene happy onlayer mc
     r "Yes! Shall we?"
     ba "Let's not keep them waiting, then!"
     "And just like that, our spirits are high."
@@ -202,6 +207,7 @@ label ch2_s1_b4:
 
 menu:
     "The team's waiting. Let's just go.":
+        show rene neutral onlayer mc
         "The rest of Dusk is waiting for us. Let's just go ahead and meet them... killer jokes are better with a crowd anyways."
         jump ch2_s2
     "Let's make it light.":
@@ -219,25 +225,31 @@ menu:
         r "I just hook my arm around his and pull him along. All while he's laughing."
         "For that moment, it looks like he's forgotten everything that was worrying him."
         "I'm glad I could help him forget whatever was on his mind, even for a moment."
-        show rene neutral
+        show rene neutral onlayer mc
         r "Hey, just curious... does your brain... become like, you know, {i}hard{/i} whenever you use your powers?"
         ba "Of course!"
-        show rene surprised
+        show rene surprised onlayer mc
         r "Wait, really?"
         ba "How else are my plans so {i}solid{/i}?"
-        show rene neutral
+        show rene happy onlayer mc
         r "Oh my goodness-- you're worse than me!"
         jump ch2_s2
 
 label ch2_s2:
-    scene park day with Fade(0.75, 0.5, 0.5)
-    show rene neutral at right
-    show bastion neutral at left
+    scene park day
+    hide rene onlayer mc
+    show rene neutral at side onlayer mc
+    show mia happy at left
+    show alicia happy at center
+    show bastion neutral at offscreenright
+    with Fade(0.75, 0.5, 0.5)
+    show bastion neutralsmile at right with ease
     m "And then Professor Miller said..."
     a "Really, I thought..."
     "I realise I’m not listening to the conversation at all."
     "The Dusk team: Bastion, Alicia, Mia and I decided to hang out together after school at the park."
     "It’s nice to spend time together outside of work…"
+    show rene sad onlayer mc
     "But I can't focus. I keep thinking about Shadow's reaction to me discovering he's Samuel."
     "All this time he was living his life so close to me and I didn't realise. I feel weird about this."
     "He's right - it was easier when I saw everything as black and white."
@@ -246,102 +258,123 @@ label ch2_s2:
         "But after all, why can't it be? Knowing my enemies shouldn't necessarily interfere with the way I work."
     show bastion happy
     ba "...what do you think, Rene?"
-    show rene sad
     r "Uh I'm sorry. I wasn't listening."
-    m "Is something wrong?"
-    show bastion neutral
+    m sad "Is something wrong?"
+    show bastion worried
     ba "Ever since you got injured in the fight, you've been out of it."
-    a "Does it still hurt?"
+    a sad "Does it still hurt?"
     r "It does a bit. But it impacted me more mentally than I thought it would. I keep thinking - was it the right thing to do?"
     if bastion < 15:
-        ba "We won thanks to you."
+        ba neutralsmile "We won thanks to you."
     else:
-        ba "Uhm... of course. It was the right thing to do..."
+        ba neutralfrown "Uhm... of course. It was the right thing to do..."
         "Well, you don't look to sure about it."
     r "Did we really win? The mission, maybe. But the fight against Dawn? It seems never-ending. How long have we been fighting them now?"
-    a "Over a year."
-    m "It feels like much longer..."
-    ba "Are you having second thoughts about being part of Dusk?"
+    a neutral "Over a year."
+    m neutral "It feels like much longer..."
+    ba worried "Are you having second thoughts about being part of Dusk?"
 
 menu:
     "Deny it. Of course you don't. You love your team.":
-        show rene surprised
+        show rene surprised onlayer mc
         r "No! I love Dusk. It's just that... lately we get called in so often to steal things from Dawn..."
-        ba "...not steal, secure."
+        ba neutralsmile "...not steal, secure."
         jump ch2_s2_2
     "Admit that you do":
         $ villain += 10
-        show rene neutral
+        show rene neutral onlayer mc
         r "The thought of quitting the team did, in fact, cross my mind..."
+        show bastion surprised
+        show alicia surprised
+        show mia surprised
         "They all look at me in shock."
         m "You can't be serious!"
         jump ch2_s2_2
     "Lie that you don't":
         $ villain +=5
-        show rene surprised
+        show rene surprised onlayer mc
         r "No, of course not. I love Dusk."
+        show rene neutral onlayer mc
         "I don't but they won't see me admitting that."
-        show rene neutral
         r "It's just that... lately we get called in so often to steal things from Dawn..."
-        ba "...not steal, secure."
+        ba neutralfrown "...not steal, secure."
         jump ch2_s2_2
 
 label ch2_s2_2:
-    show rene sad
+    show rene sad onlayer mc
     r "Whatever. And somehow Dawn always knows we'll be there."
-    a "Are you suggesting one of us is a traitor?"
+    a annoyed "Are you suggesting one of us is a traitor?"
     if villain >= 15:
         "She looks at me with suspicion in her eyes."
-        show rene neutral
+        show rene neutral onlayer mc
         r "Anything you want to say Alicia?"
+        show alicia surprised
         "She shakes a bit but doesn't reply. She's terrified of me. How fun."
         jump ch2_s2_3
     else:
-        show rene angry
+        show rene angry onlayer mc
         r "Of course not! I'm just saying it's weird and that's all."
-        m "It is weird, that's true..."
+        m neutral "It is weird, that's true..."
         show bastion sad
         ba "Maybe you're right."
         jump ch2_s2_3
 
 label ch2_s2_3:
+    show rene sad onlayer mc
+    show bastion worried
+    show alicia sad
+    show mia sad
     "Silence falls as we all analyse the past year in our heads."
     "With the mood gone south, we all begin to head our separate ways. No one is in the mood to joke around like usual."
     "Something weird is going on. I can feel it."
     "I just hope we will survive it as a team."
+    if bastion >= 15:
+        "I noticed Bastion and his looks of doubt."
+        "Not only that, but his looks of... worry? Whatever it is, he's being quiet about it..."
+        "What are you thinking about?"
+        "Are you having the same doubts as me?"
     jump ch2_s3
 
 label ch2_s3:
-    scene aunt room night with Fade(0.75, 0.5, 0.5)
-    show rene neutral
+    scene living room
+    hide rene onlayer mc
+    show rene neutral at side onlayer mc
+    show aunt matilda happy at center
+    with Fade(0.75, 0.5, 0.5)
     "In the evening I decide to visit my Aunt Matilda. The two of us have always had a close relationship."
     "Aside from my team members whom I've known for a year now, she is my closest friend."
     "While other friends entered my life and left it, she remained a pillar of stability."
     "There is a difference in ages of course. But Aunt Matilda feels 20 years younger than she is. She is my mother’s younger sister."
     "Always cheerful and kind, she has her own studio where she paints."
     "Her paintings hang in the city’s gallery and sell for piles of money."
+    show aunt matilda surprised
     am "Hi, Rene! Oh, what happened to you?"
     "She notices the ugly bruise on my arm which refuses to fade. It changes color everyday and glares back as I glare at it."
-    show rene happy
+    show rene happy onlayer mc
     r "It's nothing. I just bumped into my closet real hard."
-    am "You're so clumsy. Show it to me."
+    am angry "You're so clumsy. Show it to me."
     "She touches the bruise and tries to be gentle."
+    show rene hurt onlayer mc
     r "Ouch!"
     "But it still hurts like a bitch."
+    show aunt matilda neutral
     "Through the pain, I feel that Aunt Matilda's touch is cold and pleasant."
     "Suddenly the pain stops."
-    show rene surprised
+    show rene surprised onlayer mc
     r "...what?"
-    am "What's wrong?"
+    show aunt matilda surprised
+    am surprised "What's wrong?"
     r "It doesn't... hurt anymore..."
-    am "That's great!"
-    show rene neutral
+    show aunt matilda happy
+    am happy "That's great!"
+    show rene neutral onlayer mc
     r "...I suppose."
     "But why did it suddenly stop hurting? I look at it and the bruise is much less remarkable. Weird."
-    am "So... is there anything troubling you? You don't normally bump into furniture."
+    am neutral "So... is there anything troubling you? You don't normally bump into furniture."
+    show rene sad onlayer mc
     "I wish I could talk about my super life with her."
     "An outsider's perspective on what is happening would be so valuable, especially my Aunt's who I know deeply cares about me."
-    am "If you are not gonna say anything, I'm going to get angry!"
+    am  "If you are not gonna say anything, I'm going to get angry!"
 
 menu:
     "Say it's about a boy":
@@ -351,31 +384,40 @@ menu:
         jump friends_ch2
 
 label boy_ch2:
+    show rene sad onlayer mc
     r "I... met a guy... and I'm having some trouble communicating with him."
-    am "Finally love troubles, oh my cute little Rene!"
-    show rene shy
+    show aunt matilda happy
+    am happy "Finally love troubles, oh my cute little Rene!"
+    show rene shy onlayer mc
     r "No no no! Not that kind of trouble!"
     am "I thought you'd never find a boy you would be interested in."
-    am "As open as you are to meeting new people, you've never been interested in forming such a close attachment to anyone but your friends."
+    show aunt matilda neutral
+    am neutral "As open as you are to meeting new people, you've never been interested in forming such a close attachment to anyone but your friends."
     r "I'm just... I have to know someone first before I'm attracted to them."
     am "Oh, I understand that. Don't worry. Do you want to talk about it?"
-    show rene neutral
+    show rene sad onlayer mc
     r "I'm sorry, Aunty. I would prefer not to."
-    am "Whenever you are ready then!"
+    show aunt matilda happy
+    am happy "Whenever you are ready then!"
     jump ch2_s3_2
 
 label friends_ch2:
+    show rene sad onlayer mc
     r "I had... a fight with my friends."
-    am "Oh no! With Alicia, Mia, and Bastion?"
+    show aunt matilda surprised
+    am surprised "Oh no! With Alicia, Mia, and Bastion?"
     r "Yes... Bastion took my side, while the girls were against me."
-    am "Oh no, what divided you so?"
+    show aunt matilda neutral
+    am neutral "Oh no, what divided you so?"
     r "Something I've done at work. But I can't tell you what."
-    am "I'm sorry to hear that but I understand."
+    show aunt matilda sad
+    am sad "I'm sorry to hear that but I understand."
     jump ch2_s3_2
 
 label ch2_s3_2:
-    am "It seems to have been a hard week for you. How about we bake a cherry pie?"
-    show rene happy
+    show aunt matilda happy
+    am happy "It seems to have been a hard week for you. How about we bake a cherry pie?"
+    show rene happy onlayer mc
     r "Oh yes! My favourite cake is bound to cheer me up!"
     am "To the kitchen then!"
     "We spend some time baking a cake and talking about nothing important."
@@ -383,17 +425,21 @@ label ch2_s3_2:
     jump ch2_s4
 
 label ch2_s4:
-    scene warehouse night with Fade(0.75, 0.5, 0.5)
-    show stoneman at left
-    show bolt at right
+    scene warehouse outside
+    hide rene onlayer mc
+    show stoneman neutralfrown at center
+    show bolt neutral at side onlayer mc
+    with Fade(0.75, 0.5, 0.5)
+
     "Another mission to fetch a package, another Dawn warehouse. Those places all look the same to me."
-    st "Why are they sending us on another similar quest? And so soon? Bolt is still not fully healed..."
-    show bolt surprised
+    st worried "Why are they sending us on another similar quest? And so soon? Bolt is still not fully healed..."
+    show bolt surprised onlayer mc
     b "Actually I am. Don't know how but I am."
     "I looked over my wounds yesterday evening and surprisingly they were all healed."
     "I have no idea what caused this sudden acceleration but it happened."
-    show bolt neutral
+    show bolt neutral onlayer mc
     b "Let's get this over and done with quickly."
+    show stoneman neutralfrown
     "This time it's just the two of us. The higher-ups decided a smaller team would be sufficient."
     "I just hope we don't run into Dawn."
     "It's the same routine as last time. We dispatch the guards and enter the warehouse. We split and look for the right box."
@@ -401,25 +447,32 @@ label ch2_s4:
         "This time around I don't kill but only becuase I don't want to antagonise my teammate."
     "Just what is in those boxes that is so important to the higher-ups?"
     "This time around 10 minutes pass before things start to go south."
-    show shadow neutral at center with dissolve
+    show stoneman surprised at leftish with ease
+    show bolt surprised onlayer mc
+    show shadow neutral at rightish with dissolve
     "Suddenly Shadow appears behind Stoneman and kicks his feet from under him. Stoneman goes down but rolls over and stands up quickly."
     show stoneman angry
     st "I see you've arrived!"
     "I look around to see if I can spot the other Dawn members coming."
     "But it's quiet. Shadow slips into the darkness and reappears a distance away."
-    show bolt surprised
     b "Did you come alone today?"
     sh "...yes."
     "Huh. That's surprising."
     "Maybe this is just a diversion then and the others are attacking a Dusk warehouse as we speak? It's happened before."
-    show bolt neutral
+    show bolt neutral onlayer mc
     b "Stoneman, we should leave quickly."
-    st "Not before we complete the mission."
+    st neutralfrown "Not before we complete the mission."
+    show shadow angry
     "Stoneman runs up to Shadow and throws a punch, but Shadow blocks him and slips away."
     show stoneman angry
     st "Bolt, don't just stand there! Help me!"
+    "Stoneman and Shadow, fighting each other..."
+    show bolt sad onlayer mc
+    "This is the last situation I wanted to find myself in."
+    show bolt neutral onlayer mc
     "I should help Stoneman so that we can complete our mission. But I don't want to fight Shadow..."
     "I don't feel comfortable with the idea anymore and after our arguement... I don't want to worsen our relations."
+    show bolt surprised onlayer mc
     "Wait, what am I thinking? Shadow is our enemy. Why did seeing him live a normal life affect me so much?"
     st "Bolt! What are you doing?!"
     "Shadow and Stoneman are fighting but no side is winning. What should I do?"
@@ -439,6 +492,7 @@ menu:
         $ ch2choice = "REFUSE"
         jump refuse_ch2
 label look_ch2:
+    show bolt neutral onlayer mc
     "I can't force myself to participate in the fight but I'm still on a mission and I need to do my job."
     b "I'll look for the box! Keep him occupied!"
     if bastion < 15:
@@ -447,14 +501,18 @@ label look_ch2:
         show stoneman surprised
         st "What...? Re- Bolt! Please help!"
         b "...sorry, I can't."
+    show shadow neutral
     "Shadow looks at me for a moment with a look in his eyes that I can't decipher. I don't wait to watch the fight."
-    "I spend the next few minutes looking for the package, while Stoneman and Shadow fight it out."
-    "I can feel Stoneman's anger radiating and Shadow has his characteristic smirk."
     show stoneman angry
+    "I spend the next few minutes looking for the package, while Stoneman and Shadow fight it out."
+    show shadow smirk
+    "I can feel Stoneman's anger radiating and Shadow has his characteristic smirk."
     st "What's so funny?!"
-    show shadow happy
     sh "Nothing. Nothing at all."
+    hide shadow with dissolve
+    show stoneman at center with ease
     "Eventually I find the box, take it and run to the exit. Bastion follows me soon after. He looks very tired and pissed."
+    show bolt sad onlayer mc
     b "Stoneman..."
     if bastion < 15:
         jump ch2_s5
@@ -462,17 +520,20 @@ label look_ch2:
         jump ch2_s5_b1
 
 label fight_ch2:
+    show bolt neutral onlayer mc
     "Forget my weird feelings. I have to help my friend, Stoneman. I will figure out my emotions later."
     show shadow sad
     "I join the fight and together Stoneman and I quickly overpower Shadow."
     "I see the disappointment on Shadow's face. It hurts to see him this way."
+    show bolt sad onlayer mc
     "I don't know what to think anymore. We are enemies. I'm doing my job. It should feel right but it just doesn't."
     hide shadow with dissolve
+    show stoneman neutralfrown at center with ease
     "Eventually Shadow retreats and we find the package."
-    show bolt happy
+    show bolt happy onlayer mc
     b "Good job today, Stoneman."
     "I smile at Stoneman, but he looks... troubled."
-    show bolt neutral
+    show bolt neutral onlayer mc
     b "Why are you..."
     if bastion < 15:
         jump ch2_s5
@@ -480,15 +541,20 @@ label fight_ch2:
         jump ch2_s5_b1
 
 label refuse_ch2:
+    show bolt surprised onlayer mc
     "I can't do anything. I just don't know what I should do. I'm so confused."
     if bastion < 15:
+        show stoneman angry
         st "Bolt, for fuck's sake!"
     else:
+        show stoneman angry
         st "Tch... just... nevermind! I... I got this!"
-    show shadow happy
+    show shadow smirk
     "Shadow has his characteristic smirk on his face. He's pleased with my decision."
+    show bolt sad onlayer mc
     "I mean, I'm not fighting the enemy, I'm not doing my job, I feel so stupid. But I can't move."
     hide shadow with dissolve
+    show stoneman at center with ease
     "Eventually Stoneman overpowers Shadow and Shadow retreats from the fight. We find the package."
     b "I'm sorry, Stoneman."
     if bastion < 15:
@@ -499,34 +565,40 @@ label refuse_ch2:
         jump ch2_s5_b1
 
 label ch2_s5:
-    scene dusk base with Fade(0.75, 0.5, 0.5)
-    show stoneman angry at left
-    show bolt neutral at right
+    scene dusk base
+    show frostbite neutral at farleft
+    show stoneman angry at center
+    show mia neutral at right
+    show bolt neutral at side onlayer mc
+    with Fade(0.75, 0.5, 0.5)
 
     if ch2choice == "LOOK":
         st "And she refused to fight Shadow! Disobeyed my order!"
         "The whole Dusk team is gathered in our secret base and Bastion is voicing his displeasure with my actions during the mission."
-        show bolt angry
+        show bolt angry onlayer mc
         b "But I still furthered our mission objective. Which was not to fight Dawn but to look for the package!"
     elif ch2choice == "FIGHT":
         st "And she was hesitant to fight Shadow! Almost disobeyed my order!"
         "The whole Dusk team is gathered in our secret base and Bastion is voicing his displeasure with my actions during the mission."
-        show bolt angry
+        show bolt angry onlayer mc
         b "But in the end I didn't! I fought him alongside you!"
     else:
         st "And she refused to fight Shadow! Disobeyed my order!"
         "The whole Dusk team is gathered in our secret base and Bastion is voicing his displeasure with my actions during the mission."
+        show bolt sad onlayer mc
         b "..."
         st "You won't even say anything to defend yourself?!"
 
 menu:
     "Apologize":
         $ villain -= 5
+        show bolt sad onlayer mc
         b "I'm sorry..."
         st "At least you feel guilty about it..."
         jump ch2_s5_2
     "Stay silent":
         $ bastion -= 5
+        show bolt neutral onlayer mc
         b "..."
         st "Unbelievable."
         jump ch2_s5_2
@@ -534,8 +606,8 @@ menu:
 label ch2_s5_2:
     show stoneman angry
     st "Still, I gave you my order and you disrespected me!"
-    show bolt angry
-    b "Ah, so this is about your feelings now?"
+    show bolt angry onlayer mc
+    b surprised "Ah, so this is about your feelings now?"
     m "Folks, calm down...!"
     st "You mean your feelings! Exactly what is your relationship with Shadow?"
     b "What are you implying?"
@@ -544,14 +616,21 @@ label ch2_s5_2:
     b "What?! That's ridiculous! There is nothing between us. You're just imagining things!"
     f "Actually, I agree with Stoneman. The way you behave around Shadow is not normal for enemies..."
     b "Not you too?! Leave me alone! I will feel and do what I want!"
+    hide stoneman
+    hide frostbite
+    hide mia
+    with dissolve
     "Angry, I stomp out of the room, slamming the door behind me."
     "What is with them?! There is nothing special between me and Shadow..."
     jump ch2_s6
 
 label ch2_s5_b1:
-    scene dusk base with Fade(0.75, 0.5, 0.5)
-    show stoneman neutral at left
-    show bolt neutral at right
+    scene dusk base
+    show frostbite neutral at farleft
+    show mia neutral at right
+    show stoneman sad at center
+    show bolt sad at side onlayer mc
+    with Fade(0.75, 0.5, 0.5)
 
     if ch2choice == "LOOK":
         st "I'm just... trying to understand. I needed your help, Bolt. And instead, you just..."
@@ -574,43 +653,56 @@ menu:
         jump ch2_s5_b2
     "Stay silent":
         $ bastion -= 5
+        show bolt neutral onlayer mc
         b "..."
         st "Bolt, we're a team. I need to be sure that we're on the same side. I need to completely understand where your head's at..."
         jump ch2_s5_b2
 
 label ch2_s5_b2:
-    show stoneman neutral
+    show stoneman neutralfrown
     st "All that being said, I have to ask..."
     st "Bolt, what's your relationship with Shadow?"
+    show bolt neutral onlayer mc
     "My eye twitches."
-    show bolt angry
+    show bolt angry onlayer mc
+    show mia surprised
+    show frostbite surprised
+    show stoneman surprised
     b "Just {i}what{/i} exactly are you implying?"
     m "Uh oh."
-    show stoneman surprised
+    show mia neutral
+    show frostbite neutral
     st "No! It's just... I noticed that the two of you have been talking it up and avoiding conflict with each other!"
-    show stoneman neutral
+    show stoneman neutralfrown
     st "Remember: we're {i}enemies{/i}. If there's anything between the two of you... we, your teammates, should know."
     b "What?! That's ridiculous! There's nothing between us. You're just imagining things!"
     f "Actually, I agree with Stoneman. The way you behave around Shadow is not normal for enemies..."
     b "Not you too?! Leave me alone! I will feel and do what I want!"
+    hide stoneman
+    hide frostbite
+    hide mia
+    with dissolve
     "Angry, I stomp out of the room, slamming the door behind me."
     "What is with them?! There's nothing special between me and Shadow..."
     jump ch2_s6
 
 label ch2_s6:
-    scene park night with Fade(0.75, 0.5, 0.5)
-    show rene neutral
+    scene park night
+    hide bolt onlayer mc
+    show rene neutral at side onlayer mc
+    with Fade(0.75, 0.5, 0.5)
     "I need some fresh air so on my way back home I take the longer route through the park. The main alleys are well-lit."
     "It's well past 3 am, so there's nobody here... or so I thought but now I hear singing."
-    show rene at right with move
-    show samuel sad at left with dissolve
+    show samuel sad at center with dissolve
     s "*lyrics*"
+    show rene surprised onlayer mc
     "It's a sad song about loss and loneliness. And I recognise the voice. It's Shadow... Samuel singing."
+    show rene sad onlayer mc
     "I feel like this song suits him more than the one we sang at his class... but..."
     "That's not a very nice thought, is it? That loneliness and sadness suit someone."
     s "*lyrics*"
     "Come to think of it, he always has this aura of melancholy around him. It feels as if he cannot allow himself to be happy."
-    show rene sad
+    show rene sad onlayer mc
     r "*lyrics*"
     show samuel neutral
     "I know the song so I join in. I... really think Samuel needs a friend. He notices my presence and smiles a sad smile."
@@ -620,6 +712,7 @@ menu:
         $ samuel += 5
         $ villain += 5
         "And I... yes, I would like to be his friend. Not his enemy or a stranger..."
+        show rene neutral onlayer mc
         "I cannot deny that I've always felt a sense of connection with him and I want to pursue it."
         jump ch2_s7
     "Samuel is your enemy. It's not appropriate to befriend him.":
@@ -627,27 +720,28 @@ menu:
         "I should squash those feelings while I still can, not pursue them."
         "I finish the song."
         "Not giving Samuel the chance to say anything, I phase out and then start walking quickly in the direction of home."
+        show rene neutral onlayer mc
         "I will not be confused anymore."
         jump ch3_s1_1
 
 label ch2_s7:
-    show samuel happy
+    show samuel smirk
     s "...thank you... for joining me."
-    show rene happy
+    show rene happy onlayer mc
     r "No problem. I hope my butting in didn't destroy your mood."
     show samuel surprised
     s "What? No! I like singing with others. Especially if they sing well."
     r "Thank you for saying that. From a professional, that means a lot."
-    show samuel happy
+    show samuel smirk
     s "Where did you learn to sing?"
     r "I did church choir as a kid. Other than the basics I picked up there, I'm self-taught."
     show samuel neutral
     s "I see... Can I ask you something, why didn't you pursue it professionally? You have a good voice and you like it... right?"
-    show rene surprised
+    show rene surprised onlayer mc
     r "I... never thought I was good enough to do it for a living... I guess I lacked the confidence to do it?"
-    show samuel happy
+    show samuel smirk
     s "Lack confidence? You? Really?"
-    show rene happy
+    show rene happy onlayer mc
     "I laugh at that."
     r "Even I have moments where I don't believe in myself. Despite how I act, I don't believe I'm invincible."
     s "I believe I've been deceived."
@@ -656,11 +750,13 @@ label ch2_s7:
     show samuel neutral
     s "Your major is something related to numbers?"
     r "Economics."
-    show samuel happy
+    show samuel smirk
     s "Huh... so you {i}are{/i} smarter than I thought..."
-    show rene angry
+    show rene angry onlayer mc
     r "Hey!"
+    show samuel happy
     s "Confident, beautiful, smart, and has a good singing voice... what can you not do... Rene?"
+    show rene surprised onlayer mc
     "Wait... he thinks so highly of me... more importantly \"beautiful\"? Does that not count as flirting?"
 menu:
     "Flirt back":
@@ -670,24 +766,27 @@ menu:
         jump ignore_ch2
 
 label flirt_ch2:
-    show rene happy
+    show rene happy onlayer mc
     r "You're not so bad yourself, handsome!"
+    show samuel smirk
     s "I see... so you like my looks."
     r "Well, I like your singing voice too and I like how being around you brings out my competitive side."
     r "Be it an argument or a fight, I'm never bored."
     s "I get where you're coming from. I feel the same."
+    show rene surprised onlayer mc
     "Oh..."
     "I meant- I... wanted to be friends... I didn't uh-"
     "Time for a strategic retreat. Let's change the subject!"
-    show rene neutral
+    show rene sad onlayer mc
     r "On the topic of our bickering, I'm sorry about what I said that day in my room."
     jump ch2_s7_2
 
 label ignore_ch2:
+    show rene neutral onlayer mc
     "I want to be friends with Samuel so it's better if I don't acknowledge that part."
     "Besides he could have just meant he finds me aesthetically pleasing. Don't jump to conclusions, Rene!"
     "I should just change the subject."
-    show rene neutral
+    show rene sad onlayer mc
     r "There's something I wanted to talk about. I need to apologise for what I said that day in my room."
     jump ch2_s7_2
 
@@ -699,8 +798,10 @@ label ch2_s7_2:
     r "But if you were not angry about that day, why did you lash out at me in the classroom?"
     if hide_identity:
         s "Because you lied to me about your identity."
+        show rene neutral onlayer mc
         r "No. It was even before that!"
     s "...well..."
+    show rene neutral onlayer mc
     "I see he's uncomfortable. Should I push for an answer?"
 
 menu:
@@ -711,8 +812,9 @@ menu:
         jump ch2_s7_3
     "Drop the subject.":
         "I won't push for an answer if he doesn't want to give one."
-        show rene happy
+        show rene happy onlayer mc
         r "Don't worry about it, Samuel. You don't have to tell me if you don't want to."
+        show samuel neutral
         s "I'm just worried about how you would take my answer. But I'll give it to you. You deserve it."
         jump ch2_s7_3
 
@@ -720,32 +822,33 @@ label ch2_s7_3:
     show samuel neutral
     s "...Uh well, I was scared about how that would change our relationship."
     s " Knowing each other in real life... talking normally... singing together..."
-    show rene surprised
+    show rene surprised onlayer mc
     r "Ah, so we're worried about the same thing."
-    show rene neutral
+    show rene sad onlayer mc
     r "We're supposed to be enemies... a hero and a villain..."
     s "A hero and a villain? Which is which though?"
-    show rene surprised
+    show rene surprised onlayer mc
     r "That's-"
     s "Not as obvious as you think it is. You are as much a villain to me as I am to you."
     s "I would not work for Dawn if I didn't think it was the right side..."
     r "I didn't think-"
     s "You thought I was evil, did you not? Guess what - there are very few truly evil people in the world."
-    s "But I guess I might as well be, isn’t it that most evil people believe they’re in the right too."
-    show samuel happy
+    s "But I guess I might as well be, isn't it that most evil people believe they’re in the right too."
+    show samuel smirk
     s "It's up to you to decide how you see me."
     s "I'd just ask you to judge me based on my actions, not based off of any ideas others put in your pretty little head."
     "There is so much truth to what he is saying. I always believed Dusk and Dawn are polar opposites, pure good and pure evil…"
+    show rene sad onlayer mc
     "But what if I was wrong?"
     "Even if the organisations are right and wrong, the people can have their own set of morals."
     if bastion >= 15:
         "If I told Bastion... I wonder how it would change his outlook."
-    show rene neutral
+    show rene neutral onlayer mc
     r "Why did you join Dawn in the first place?"
     show samuel neutral
     s "I... honestly? I need the money for something. They offered a good sum."
     r "Ahh, I see. So it's not about saving the world for you?"
-    show samuel happy
+    show samuel smirk
     s "I don't have such dreams, no. My dream is to be recognised for my singing. This is just a job for me."
 menu:
     "Ask why he needed the money":
@@ -762,22 +865,24 @@ label ask_ch2:
     s "Well... I'm the only one who takes care of my brother."
     s "He's sick. I need money for his treatment and enough for us to be able to live somewhat comfortably..."
     s "I still wanted to pursue music and this was the only way I saw it could be possible."
-    show rene surprised
+    show rene surprised onlayer mc
     r "Ahh...I'm sorry for prying into your private life!"
     show samuel neutral
     s "Don't worry about it. I wanted to tell you."
+    show rene sad onlayer mc
     "This is why he always seem so sad..."
     "Taking care of a sick loved one must be hard, especially if you are as young as we are and studying while also being supers."
-    show rene happy
+    show rene happy onlayer mc
     r "You're a strong person."
     s "I'm not."
     r "You are! I really believe that!"
+    show samuel smirk
     s "...thank you."
     jump ch2_s7_4
 
 label ch2_s7_4:
-    show rene happy
-    show samuel happy
+    show rene happy onlayer mc
+    show samuel smirk
     "We talk a bit more about our daily lives. Eventually I yawn. It's late and I'm tired."
     "We have a day off college tomorrow but it would still be good to go to sleep before morning comes."
     "We say our goodbyes and part ways. I feel giddy thanks to talking to him. I really enjoyed our time together."

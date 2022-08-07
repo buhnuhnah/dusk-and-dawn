@@ -10,7 +10,7 @@ transform rightish:
 transform farleft:
     xalign 0.05
 transform farright:
-    xalign 0.95
+    xalign 1.0
 transform flip:
     xzoom -1.0
 transform side:
@@ -18,41 +18,41 @@ transform side:
     yalign 1.0
 
 #CHARACTER DEFINITIONS
-define ba = Character("Bastion")
+define ba = Character("Bastion", image='bastion')
 define st = Character("Stoneman", image='stoneman')
 
-define a = Character("Alicia")
-define f = Character("Frostbite")
+define a = Character("Alicia", image='alicia')
+define f = Character("Frostbite", image='frostbite')
 
-define r = Character("Rene")
+define r = Character("Rene", image='rene')
 define b = Character("Bolt", image="bolt")
 
-define m = Character("Mia")
+define m = Character("Mia", image='mia')
 
-define s = Character("Samuel")
-define sh = Character("Shadow")
+define s = Character("Samuel", image='samuel')
+define sh = Character("Shadow", image='shadow')
 
-define ma = Character("Magno")
-define sn = Character("Snapshot")
-define l = Character("Levina")
+define ma = Character("Magno", image='magno')
+define sn = Character("Snapshot", image='snapshot')
+define l = Character("Levina", image='snapshot')
 
-define am = Character("Aunt Matilda")
+define am = Character("Aunt Matilda", image='aunt matilda')
 
 # IMAGES
 
 # plays in ch 4 when the alarm gets tripped
 # ANA CHANGE THIS TO INCLUDE THE FULL PATH ONCE YOU GET REAL WAREHOUSE
 image warehouse alarm:
-    "warehouse_red.png" with dissolve
+    "backgrounds/warehouse inside.png" with dissolve
     pause 0.5
-    "warehouse.png" with dissolve
+    "backgrounds/warehouse inside red.png" with dissolve
     pause 1.0
     repeat
 
 init python:
     config.searchpath.extend(["game/audio", "game/images/backgrounds"])
     dice = renpy.random.randint(2,8)*0.1
-    renpy.add_layer('mc', above='overlay')
+    renpy.add_layer('mc', below='overlay')
 
     # POINT TRACKERS
     villain = 0
